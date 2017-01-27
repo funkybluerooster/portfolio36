@@ -1,0 +1,3226 @@
+@charset "UTF-8";
+@import url(/assets/css/ticom3-common.css);
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://www.ti.com/assets/fonts/MaterialIcons-Regular.eot); }
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(http://www.ti.com/assets/fonts/MaterialIcons-Regular.woff2) format("woff2"), url(http://www.ti.com/assets/fonts/MaterialIcons-Regular.woff) format("woff"); }
+
+@font-face {
+  font-family: 'ti-icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://www.ti.com/assets/fonts/ti-icons.eot?qm906k); }
+
+@font-face {
+  font-family: 'ti-icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://www.ti.com/assets/fonts/ti-icons.woff?qm906k) format("woff"); }
+
+*:before {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+  float: left; }
+
+.do_border_bottom {
+  border-bottom: 15px solid #4caf50; }
+
+.do_not_border_bottom {
+  border-bottom: 15px solid #cc0000; }
+
+body, input, select, textarea, table, button {
+  font-family: "Open Sans", sans-serif; }
+
+body {
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  /*min-width: 1000px*/ }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.hidden {
+  display: none; }
+
+.nowrap {
+  white-space: nowrap; }
+
+.clear, .row, header > div, .tab, .anchor, footer {
+  clear: both;
+  zoom: 1; }
+  .clear:before, .row:before, header > div:before, .tab:before, .anchor:before, footer:before, .clear:after, .row:after, header > div:after, .tab:after, .anchor:after, footer:after {
+    content: "";
+    display: table; }
+  .clear:after, .row:after, header > div:after, .tab:after, .anchor:after, footer:after {
+    clear: both; }
+
+img {
+  border: 0; }
+
+b, strong {
+  font-weight: 600; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 0 0 .5em 0;
+  color: #333; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.6em; }
+
+h3 {
+  font-size: 1.4em;
+  position: relative; }
+
+h4 {
+  font-size: 1.2em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: 1em; }
+
+p {
+  margin: 0 0 1em 0;
+  max-width: 60em; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1em 1em; }
+  ul.no-style {
+    margin: 0; }
+    ul.no-style > li {
+      padding: 0;
+      background: none; }
+  ul > li {
+    list-style-type: none;
+    background: url(http://ti.com/assets/images/ulCircle.png) no-repeat 0 0.6em;
+    padding-left: .6em;
+    margin: 0 0 .5em 0; }
+    ul > li ul li {
+      background: url(http://ti.com/assets/images/ulDash.gif) no-repeat 0 0.7em; }
+
+ol {
+  padding: 0;
+  margin: 0 0 1em 2.3em; }
+  ol > li {
+    margin: 0 0 .5em 0; }
+
+ul ul, ol ul, ul ol, ol ol {
+  margin-top: .5em;
+  margin-bottom: 0; }
+
+sup, sub {
+  position: relative;
+  font-size: .7em;
+  top: -.3em;
+  vertical-align: baseline;
+  font-weight: 300; }
+
+sub {
+  top: .3em; }
+
+hr {
+  border: 0;
+  border-bottom: 1px dotted #c0c0c0;
+  margin-bottom: 1em; }
+
+.row {
+  margin: 0 0 2em 0; }
+  .row .center {
+    text-align: center; }
+  .row .right {
+    text-align: right; }
+  .row .flright {
+    float: right; }
+  .row .flleft {
+    float: left; }
+  .row img {
+    max-width: 100%;
+    vertical-align: text-bottom; }
+
+.c1 {
+  width: 8.33%; }
+
+.c2 {
+  width: 16.66%; }
+
+.c3 {
+  width: 25%; }
+
+.c4 {
+  width: 33.33%; }
+
+.c5 {
+  width: 41.66%; }
+
+.c6 {
+  width: 50%; }
+
+.c7 {
+  width: 58.33%; }
+
+.c8 {
+  width: 66.66%; }
+
+.c9 {
+  width: 75%; }
+
+.c10 {
+  width: 83.33%; }
+
+.c11 {
+  width: 91.66%; }
+
+.c12 {
+  width: 100%; }
+
+.c5_odd {
+  width: 20%; }
+
+.c7_odd {
+  width: 14.285%; }
+
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12, .c5_odd, .c7_odd {
+  position: relative;
+  float: left;
+  padding: 0 1.4em 0 0;
+  min-height: 1px; }
+
+.cEnd {
+  padding-right: 0; }
+
+.pageGroup {
+  padding: 2em 0; }
+
+.siloTitle {
+  font-size: 1.6em;
+  color: #333;
+  padding: 0 2em 1em;
+  padding: 0 2rem 1em; }
+
+.pageTitle {
+  padding: 0 2em;
+  padding: 0 2rem; }
+
+.pageNav ~ .pageTitle {
+  float: left;
+  width: 80%; }
+
+.breadcrumb, .breadcrumbs {
+  font-size: .9em;
+  color: #b0b0b0; }
+  .breadcrumb a, .breadcrumbs a {
+    color: #b0b0b0; }
+
+.breadcrumb {
+  padding: 0 2em 1em;
+  padding: 0 2rem 1em; }
+
+.pageTitle .breadcrumb {
+  padding: 0; }
+
+.pageContent {
+  position: relative;
+  padding: 0 2em;
+  padding: 0 2rem; }
+
+.pageContent a:link:hover, #ls-row-3-col-2 a:link:hover, #ls-row-3-area-2 a:link:hover {
+  color: #c00; }
+
+.pageContent a:visited, #ls-row-3-col-2 a:visited, #ls-row-3-area-2 a:visited {
+  color: #a66; }
+
+.pageNav ~ .pageContent, .pageNav ~ form .pageContent {
+  float: left;
+  width: 80%; }
+
+.pageContent1 {
+  float: left;
+  width: 70%; }
+
+.pageContent2 {
+  float: right;
+  width: 30%;
+  padding: 0 0 0 3em; }
+
+.pageGroup .pageNav, #ls-gen7-ls-lqr-w-fx, .InteriorTwoColLeftRail-LeftRail {
+  z-index: 2;
+  position: relative;
+  float: left;
+  width: 20%;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-width: 1px 1px 1px 0;
+  padding: 2em 2em;
+  padding: 2em 2rem;
+  margin: 0 0 2em 0; }
+  .pageGroup .pageNav .collapse-left, .pageGroup .pageNav .collapse, #ls-gen7-ls-lqr-w-fx .collapse-left, #ls-gen7-ls-lqr-w-fx .collapse, .InteriorTwoColLeftRail-LeftRail .collapse-left, .InteriorTwoColLeftRail-LeftRail .collapse {
+    cursor: pointer; }
+    .pageGroup .pageNav .collapse-left:before, .pageGroup .pageNav .collapse:before, #ls-gen7-ls-lqr-w-fx .collapse-left:before, #ls-gen7-ls-lqr-w-fx .collapse:before, .InteriorTwoColLeftRail-LeftRail .collapse-left:before, .InteriorTwoColLeftRail-LeftRail .collapse:before {
+      float: right;
+      background: #555;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 1.4em;
+      margin: -1rem -1.5rem 0 0;
+      content: "\e5c4"; }
+
+.pageNavContent, #cmpntprodtree, #flyList, #cmpntnav {
+  /* h3
+		border-bottom: 1px dotted $color-grey3
+		margin-bottom: 1em */
+  /* h3, li
+		span
+			font-size: 10px
+			font-weight: $font-weight-normal
+			margin: 0 0 0 5px */ }
+  .pageNavContent .cntboxhead > *, #cmpntprodtree .cntboxhead > *, #flyList .cntboxhead > *, #cmpntnav .cntboxhead > * {
+    font-size: 1.2em;
+    color: #555; }
+  .pageNavContent a, #cmpntprodtree a, #flyList a, #cmpntnav a {
+    display: inline-block;
+    color: #333; }
+  .pageNavContent ul, #cmpntprodtree ul, #flyList ul, #cmpntnav ul {
+    margin: 0; }
+  .pageNavContent .cntboxbody > ul, .pageNavContent > ul, #cmpntprodtree .cntboxbody > ul, #cmpntprodtree > ul, #flyList .cntboxbody > ul, #flyList > ul, #cmpntnav .cntboxbody > ul, #cmpntnav > ul {
+    border-bottom: 1px dotted #e0e0e0;
+    margin-bottom: 3em; }
+  .pageNavContent li, #cmpntprodtree li, #flyList li, #cmpntnav li {
+    background: none;
+    border-top: 1px dotted #e0e0e0;
+    margin: 0;
+    padding: .4em 0; }
+    .pageNavContent li ul, #cmpntprodtree li ul, #flyList li ul, #cmpntnav li ul {
+      margin: .4em 0 -.4em; }
+    .pageNavContent li li a, .pageNavContent li a.appcategindent, #cmpntprodtree li li a, #cmpntprodtree li a.appcategindent, #flyList li li a, #flyList li a.appcategindent, #cmpntnav li li a, #cmpntnav li a.appcategindent {
+      padding-left: 1em; }
+    .pageNavContent li li li a, .pageNavContent li a.indent, #cmpntprodtree li li li a, #cmpntprodtree li a.indent, #flyList li li li a, #flyList li a.indent, #cmpntnav li li li a, #cmpntnav li a.indent {
+      background: url(http://ti.com/assets/images/ulDash.gif) no-repeat 1.5em 0.75em;
+      padding-left: 2em; }
+    .pageNavContent li.active > a, .pageNavContent li a.active, #cmpntprodtree li.active > a, #cmpntprodtree li a.active, #flyList li.active > a, #flyList li a.active, #cmpntnav li.active > a, #cmpntnav li a.active {
+      color: #c00;
+      font-weight: 600; }
+
+.pageNavContent .related {
+  background: #fff;
+  padding: 1em;
+  border: 1px solid #e0e0e0;
+  margin-top: 3em; }
+  .pageNavContent .related > h4 {
+    border-bottom: 1px solid #b0b0b0;
+    padding-bottom: .4em;
+    margin-bottom: 0; }
+  .pageNavContent .related > ul {
+    border-bottom: 1px dotted #e0e0e0; }
+    .pageNavContent .related > ul > li:first-child {
+      border: 0; }
+  .pageNavContent .related a {
+    color: #189; }
+  .pageNavContent .related b {
+    display: block;
+    padding: .4em 0; }
+
+.navCollapsed .pageNav, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail {
+  position: absolute;
+  width: auto;
+  padding-left: 0.2em;
+  padding-left: 0.2rem;
+  padding-right: 0.2em;
+  padding-right: 0.2rem;
+  z-index: 2; }
+  .navCollapsed .pageNav .collapse-left, .navCollapsed .pageNav .collapse, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse-left, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse-left, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse {
+    position: relative;
+    display: inline-block;
+    padding: 1.5em 0 0; }
+    .navCollapsed .pageNav .collapse-left:before, .navCollapsed .pageNav .collapse:before, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse-left:before, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse:before, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse-left:before, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse:before {
+      background: none;
+      color: #555;
+      position: absolute;
+      top: 0;
+      left: .2em;
+      margin: 0;
+      content: "\e5d2";
+      font-size: 24px; }
+    .navCollapsed .pageNav .collapse-left:after, .navCollapsed .pageNav .collapse:after, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse-left:after, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse:after, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse-left:after, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse:after {
+      font-size: .9em;
+      content: "Menu";
+      display: block;
+      margin: .5em 0 0;
+      text-align: center; }
+    .navCollapsed .pageNav .collapse-left.cn:after, .navCollapsed .pageNav .collapse.cn:after, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse-left.cn:after, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse.cn:after, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse-left.cn:after, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse.cn:after {
+      content: "\83dc\5355";
+      width: 3em; }
+    .navCollapsed .pageNav .collapse-left.jp:after, .navCollapsed .pageNav .collapse.jp:after, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse-left.jp:after, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse.jp:after, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse-left.jp:after, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse.jp:after {
+      content: "\30e1\30cb\30e5\30fc";
+      font-size: .85em; }
+    .navCollapsed .pageNav .collapse-left.kr:after, .navCollapsed .pageNav .collapse.kr:after, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse-left.kr:after, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse.kr:after, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse-left.kr:after, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse.kr:after {
+      content: "\ba54\b274";
+      width: 3em; }
+    .navCollapsed .pageNav .collapse-left.de:after, .navCollapsed .pageNav .collapse.de:after, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse-left.de:after, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .collapse.de:after, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse-left.de:after, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .collapse.de:after {
+      content: "\4d\65\6e\fc";
+      width: 3em; }
+  .navCollapsed .pageNav .pageNavContent, .navCollapsed .pageNav > div, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx .pageNavContent, #ls-canvas.collapsed #ls-gen7-ls-lqr-w-fx > div, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail .pageNavContent, #ls-canvas.collapsed .InteriorTwoColLeftRail-LeftRail > div {
+    display: none; }
+
+.navCollapsed .pageTitle, .navCollapsed .pageContent, #ls-canvas.collapsed #ls-row-3-col-2, #ls-canvas.collapsed #ls-row-3-area-2 {
+  width: 100%;
+  padding-left: 4em; }
+
+.pageNav .close {
+  padding: 11px;
+  position: absolute;
+  top: .5em;
+  right: 0;
+  background: url(http://ti.com/assets/images/iconCloseModal.png) no-repeat 0 0;
+  background-image: url(http://ti.com/assets/images/iconCloseModal.svg), none;
+  cursor: pointer; }
+  .pageNav .close:active {
+    background-position: 0 -100px; }
+
+.tab {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #555; }
+  .tab a {
+    color: #333 !important;
+    text-decoration: none;
+    cursor: pointer; }
+  .tab ul:before, .tab ul:after {
+    content: "";
+    display: table; }
+  .tab ul:after {
+    clear: both; }
+  .tab ul {
+    margin: 0;
+    padding: 0 2em;
+    padding: 0 2rem;
+    display: flex;
+    align-items: stretch; }
+  .tab li {
+    background: url(http://ti.com/assets/images/iconTab.png) no-repeat 0 0;
+    position: relative;
+    float: left;
+    margin: 0 1.4em 0 -.7em;
+    padding: .7em .1em .7em .7em;
+    color: #c0c0c0; }
+    .tab li:after {
+      background: url(http://ti.com/assets/images/iconTab.png) no-repeat right 0;
+      position: absolute;
+      top: 0;
+      right: -24px;
+      width: 25px;
+      height: 100%;
+      content: ""; }
+    .tab li.active {
+      font-weight: 600;
+      background-position: 0 -120px;
+      z-index: 1; }
+      .tab li.active a {
+        color: #fff !important; }
+      .tab li.active:after {
+        background-position: right -120px; }
+  .tab li, .tab li:after {
+    background-image: url(http://ti.com/assets/images/iconTab.svg), none; }
+
+.anchor {
+  border-bottom: 1px solid #c0c0c0;
+  padding: 1em 0 .7em 0; }
+  .anchor ul {
+    margin: 0;
+    padding: 0 2em;
+    padding: 0 2rem; }
+  .anchor li {
+    background: none;
+    float: left;
+    padding: 0;
+    color: #c0c0c0;
+    margin: 0; }
+    .anchor li:after {
+      content: "|";
+      padding: 0 .5em; }
+    .anchor li:last-child:after {
+      content: none; }
+    .anchor li.active a {
+      background: #555;
+      color: #fff;
+      padding: 1px 10px; }
+
+.pagination {
+  margin: 1em 0;
+  text-align: right;
+  cursor: default; }
+  .pagination a {
+    cursor: pointer; }
+  .pagination span {
+    margin: 0 0 0 2em; }
+    .pagination span.active {
+      border: 1px solid #555;
+      border-radius: .2em;
+      padding: 0 .5em; }
+
+#ls-canvas {
+  min-width: 1000px; }
+  #ls-canvas a.silo-title {
+    display: inline-block;
+    font-size: 1.6em;
+    padding-bottom: 2em;
+    color: #333; }
+  #ls-canvas .silotitle a {
+    color: #333; }
+  #ls-canvas .row {
+    max-width: 1000px; }
+
+#ls-row-1 .breadcrumbs {
+  padding: 0 2em;
+  padding: 0 2rem;
+    padding-font-weight: 600; }
+
+#ls-row-3-col-2, #ls-row-3-area-2 {
+  float: left;
+  width: 80%;
+  /*max-width: 1000px*/
+  padding: 0 2em;
+  padding: 0 2rem; }
+
+#ls-gen5-ls-lqr > #ls-row-3-col-1, #ls-gen3-ls-lqr > #ls-row-2-area-1 {
+  padding: 1em 2em;
+  padding: 1em 2rem; }
+
+#ls-row-3-col-2-row-2-col-1-row-1-area-1 {
+  float: left;
+  width: 60%; }
+
+#ls-row-3-col-2-row-2-col-1-row-1-area-2 {
+  float: left;
+  width: 40%;
+  padding: 0 0 0 2em; }
+
+#ls-canvas.collapsed-animated #ls-gen7-ls-lqr-w-fx {
+  position: absolute;
+  animation: collapsed-animated-left 1s 1s forwards; }
+
+#ls-canvas.collapsed-animated #ls-row-3-col-2, #ls-canvas.collapsed-animated #ls-row-3-area-2 {
+  margin-left: 20%;
+  width: 80%;
+  animation: collapsed-animated-right 1s 1s forwards; }
+
+@keyframes collapsed-animated-left {
+  0% {
+    left: 0%; }
+  100% {
+    left: -25%; } }
+
+@keyframes collapsed-animated-right {
+  100% {
+    width: 100%;
+    margin: 0;
+    padding-left: 4em;
+    height: auto; } }
+
+#ls-gen7-ls-lqr-w-fx table {
+  width: 100%; }
+
+#flyout_menu input.filter {
+  width: 100%;
+  background: #fff url(/js/shared/apps/img/filter_passive.gif) no-repeat 98% 50%; }
+
+#flyout_menu .result-count {
+  position: relative;
+  margin: 1em 0; }
+  #flyout_menu .result-count a#fl_resetLink {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #cc0000; }
+
+#flyout_menu ul ul {
+  display: none; }
+
+#flyout_menu ul.active {
+  display: block; }
+
+#flyout_menu #flyList > ul > li > a:not(.appcategindent) {
+  font-weight: 600; }
+
+#flyout_menu span.highlight {
+  background: #ff0; }
+
+.appsMegaFlyout, #appsMegaFlyoutNotch {
+  display: none !important; }
+
+#tab {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #555; }
+  #tab a {
+    color: #333 !important;
+    text-decoration: none;
+    cursor: pointer; }
+  #tab ul:before, #tab ul:after {
+    content: "";
+    display: table; }
+  #tab ul:after {
+    clear: both; }
+  #tab ul {
+    margin: 0;
+    padding: 0 2em;
+    padding: 0 2rem;
+    display: flex;
+    align-items: stretch; }
+  #tab li {
+    background: url(http://ti.com/assets/images/iconTab.png) no-repeat 0 0;
+    position: relative;
+    float: left;
+    margin: 0 1.4em 0 -.7em;
+    padding: .7em .1em .7em .7em;
+    color: #c0c0c0; }
+    #tab li:after {
+      background: url(http://ti.com/assets/images/iconTab.png) no-repeat right 0;
+      position: absolute;
+      top: 0;
+      right: -24px;
+      width: 25px;
+      height: 100%;
+      content: ""; }
+    #tab li#active {
+      font-weight: 600;
+      background-position: 0 -120px;
+      z-index: 1; }
+      #tab li#active a {
+        color: #fff !important; }
+      #tab li#active:after {
+        background-position: right -120px; }
+  #tab li, #tab li:after {
+    background-image: url(http://ti.com/assets/images/iconTab.svg), none; }
+
+.drawer input[type=search] {
+  background: #c00 url(http://ti.com/assets/images/iconHeader.svg) no-repeat 13px -385px;
+  border: 0;
+  height: 44px;
+  width: 100%;
+  padding-left: 3em;
+  color: #fff; }
+
+header.drawer {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #c00;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  z-index: 10001; }
+  header.drawer input[type=search] {
+    background: #c00 url(http://ti.com/assets/images/iconHeader.svg) no-repeat 13px -385px;
+    border: 0;
+    height: 44px;
+    width: 100%;
+    padding-left: 3em;
+    color: #fff;
+    display: none;
+    position: absolute; }
+  header.drawer input.active[type=search] {
+    display: block; }
+  header.drawer button {
+    border: 0;
+    text-indent: -9999px;
+    height: 44px;
+    width: 44px;
+    float: left;
+    cursor: pointer;
+    /*z-index: 2*/ }
+    header.drawer button.search {
+      background: url(http://ti.com/assets/images/iconHeader.svg) no-repeat 13px -385px;
+      float: right; }
+    header.drawer button.drawer {
+      background: url(http://ti.com/assets/images/iconHeader.svg) no-repeat 13px -1285px; }
+
+nav.drawer {
+  float: left;
+  width: 25%;
+  /*max-width: 300px*/
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  z-index: 10003; }
+  nav.drawer form {
+    position: relative;
+    margin: .5em 0; }
+  nav.drawer a {
+    display: block;
+    color: #333; }
+  nav.drawer input[type=search] {
+    background-position: 0 -380px;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    padding: 1em 0 0 2em;
+    border-radius: 0; }
+  nav.drawer h3 {
+    margin-bottom: 0; }
+  nav.drawer ul {
+    margin-left: 0; }
+  nav.drawer li {
+    position: relative;
+    background: none;
+    margin: 0;
+    border-top: 1px solid #e0e0e0;
+    padding: 0; }
+    nav.drawer li li {
+      border-top-style: dashed; }
+    nav.drawer li.active > a {
+      color: #c00;
+      font-weight: 600; }
+  nav.drawer .head {
+    background: #fff;
+    padding: 1em;
+    margin-bottom: 1em; }
+    nav.drawer .head a {
+      background: url(http://ti.com/assets/images/iconHeader.svg) no-repeat 0 0/100% auto;
+      width: 260px;
+      height: 30px; }
+  nav.drawer .nav {
+    background: #fff;
+    margin-bottom: 2em; }
+    nav.drawer .nav a {
+      padding: 0.8em 2em;
+      padding: 0.8em 2rem; }
+    nav.drawer .nav > ul {
+      border-bottom: 1px solid #e0e0e0; }
+    nav.drawer .nav li ul {
+      display: none; }
+    nav.drawer .nav li.expanded ul {
+      display: block; }
+    nav.drawer .nav li li li a {
+      padding-left: 3em; }
+    nav.drawer .nav a.icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 3em;
+      height: 3em;
+      background: url(http://ti.com/assets/images/iconHeader.png?versionNumber=1.1) no-repeat 1em -1185px;
+      background-image: url(http://ti.com/assets/images/iconHeader.svg?versionNumber=1.1), none;
+      padding: 0;
+      cursor: pointer; }
+  nav.drawer .foot a {
+    padding: .8em 0; }
+  nav.drawer .foot li {
+    float: left;
+    border: 0; }
+  nav.drawer .foot.navHeader {
+    background: #c00;
+    padding: 1em; }
+    nav.drawer .foot.navHeader a, nav.drawer .foot.navHeader a:visited {
+      color: #fff; }
+    nav.drawer .foot.navHeader li {
+      width: 50%; }
+  nav.drawer .foot.navFooter {
+    padding: .5em 1em; }
+    nav.drawer .foot.navFooter a {
+      color: #b0b0b0; }
+    nav.drawer .foot.navFooter li {
+      margin-right: 1.5em; }
+      nav.drawer .foot.navFooter li:first-child {
+        width: 100%; }
+
+main.content {
+  float: left;
+  width: 75%;
+  padding: 2em;
+  -webkit-transition: padding-left 0.2s ease-in;
+  -moz-transition: padding-left 0.2s ease-in;
+  transition: padding-left 0.2s ease-in; }
+
+.modalMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10002; }
+
+.drawerOpen .modalMask {
+  opacity: 1;
+  visibility: visible; }
+
+#Table_01 img {
+  display: block;
+  max-width: none; }
+
+.stack.level1, #ls-canvas .level1 {
+  background: #156;
+  padding: 1em;
+  text-align: center; }
+  .stack.level1 h3, #ls-canvas .level1 h3 {
+    margin: 0;
+    font-size: 1.2em; }
+  .stack.level1, .stack.level1 h3, .stack.level1 a, #ls-canvas .level1, #ls-canvas .level1 h3, #ls-canvas .level1 a {
+    color: #fff !important; }
+
+.c12 .stack.level1 {
+  margin: 1.5em 0;
+  font-weight: 600; }
+  .c12 .stack.level1 a, .c12 .stack.level1 a:hover {
+    color: #fff;
+    margin: 0 .4em; }
+  .c12 .stack.level1 li.active a {
+    color: #c0c0c0 !important; }
+  .c12 .stack.level1 ul {
+    margin: 0;
+    color: #c0c0c0; }
+  .c12 .stack.level1 li {
+    display: inline-block;
+    background: none;
+    margin: 0; }
+    .c12 .stack.level1 li:before {
+      content: " | "; }
+    .c12 .stack.level1 li:first-child:before {
+      content: " "; }
+
+.stack.level2, #ls-canvas .level2 {
+  background: #f0f0f0;
+  padding: 1em;
+  vertical-align: middle; }
+
+.stack.level3, #ls-canvas .level3 {
+  background: #edf7f8;
+  padding: 1em; }
+  .stack.level3.prodValProp, #ls-canvas .level3.prodValProp {
+    text-align: center;
+    padding: 1.75em; }
+    .stack.level3.prodValProp ul, #ls-canvas .level3.prodValProp ul {
+      text-align: left; }
+
+.stack.level4, #ls-canvas .level4 {
+  background: #e0e0e0;
+  padding: 1em; }
+
+.nested-box {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 20px; }
+
+.featurebox {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #c0c0c0;
+  color: #555;
+  padding: 1.4em;
+  margin: 0 0 1em 0;
+  background: #fff;
+  background: -moz-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+  background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+  background: -ms-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0'); }
+  .featurebox .feature-image {
+    max-width: 40%;
+    min-width: 80px;
+    float: left; }
+    .featurebox .feature-image img {
+      max-width: 100%;
+      min-width: 80px;
+      height: auto;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+  .featurebox .feature-content {
+    float: left;
+    padding: 0 0 0 1em;
+    width: 60%; }
+  .featurebox h3 {
+    margin: 0 0 1em;
+    padding: 0; }
+  .featurebox h4 {
+    font-weight: normal;
+    margin: 0 0 1em;
+    padding: 0; }
+
+.bord-top {
+  border-top: 2px solid #b0b0b0;
+  padding-top: .8em; }
+
+.bordered {
+  border: 1px solid #b0b0b0; }
+
+.borderLeft {
+  border-left: 1px dotted #e0e0e0;
+  padding-left: 1em; }
+
+.divider-primary {
+  display: block;
+  background: url(http://ti.com/assets/images/primary-divider.png) no-repeat 0 0;
+  background-size: 100%;
+  height: 24px;
+  margin: 1em 0; }
+
+.divider-secondary {
+  border-top: 1px dotted #b0b0b0;
+  margin: 1em 0; }
+
+.padded {
+  padding: 1em; }
+
+.getStarted {
+  border: 2px solid #009933;
+  padding: 20px; }
+
+.row.getStarted h3 {
+  margin: 0 0 10px 0px;
+  padding: 5px 0 0 75px;
+  background: url(/lsds/media/images/shared/getting_started_65x82.gif) no-repeat 0 -10px;
+  display: block;
+  overflow: visible;
+  height: 70px;
+  vertical-align: middle; }
+
+.addthis_toolbox {
+  margin-bottom: 1em; }
+
+.ui-accordion-content {
+  padding: 14px 0 0 0; }
+
+p.intro {
+  font-size: 1.2em; }
+
+.disclaim {
+  font-size: .9em;
+  /*margin: 5px 0*/ }
+
+.accordion div {
+  position: relative; }
+
+.accordion h3.ui-accordion-header {
+  background: #f9f9f9;
+  background: -moz-linear-gradient(top, #f2f2f2 0%, #d1d1d1 99%);
+  background: -webkit-linear-gradient(top, #f2f2f2 0%, #d1d1d1 99%);
+  background: -ms-linear-gradient(top, #f2f2f2 0%, #d1d1d1 99%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  color: #189;
+  border-top: 1px #bbb solid;
+  border-bottom: 1px #bbb solid;
+  cursor: pointer;
+  margin-bottom: -1px;
+  text-indent: 54px;
+  z-index: 2;
+  position: relative;
+  line-height: 34px;
+  overflow: hidden; }
+  .accordion h3.ui-accordion-header:hover {
+    background: #e0e0e0;
+    background: -moz-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+    background: -webkit-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+    border-top: 1px #999 solid;
+    border-bottom: 1px #999 solid;
+    z-index: 3; }
+  .accordion h3.ui-accordion-header:before {
+    content: '+';
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    height: 36px;
+    line-height: 36px;
+    width: 34px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #fff;
+    text-indent: 0;
+    background: #d8d8d8;
+    background: -moz-linear-gradient(top, #d8d8d8 1%, #b2b2b2 100%);
+    background: -webkit-linear-gradient(top, #d8d8d8 1%, #b2b2b2 100%);
+    background: -ms-linear-gradient(top, #d8d8d8 1%, #b2b2b2 100%); }
+  .accordion h3.ui-accordion-header:hover:before {
+    background: #b2b2b2;
+    background: -moz-linear-gradient(top, #b2b2b2 0%, #7f7f7f 100%);
+    background: -webkit-linear-gradient(top, #b2b2b2 0%, #7f7f7f 100%);
+    background: -ms-linear-gradient(top, #b2b2b2 0%, #7f7f7f 100%); }
+
+.accordion h3.ui-state-active:before {
+  content: '\2013'; }
+
+.accordion h3.ui-accordion-header.last, .accordion h3.ui-accordion-header.ui-state-active {
+  border-bottom: 1px #bbb solid; }
+
+.accordion h3.ui-accordion-header.last:hover, .accordion h3.ui-accordion-header.ui-state-active:hover {
+  border-bottom: 1px #999 solid; }
+
+span.flag {
+  color: #c00;
+  border-right: 2px solid #c0c0c0;
+  margin: 0 5px 0 0;
+  padding: 0 5px 0 0;
+  font-size: 90%;
+  text-transform: uppercase; }
+
+span.tblIndicator {
+  background: url(http://ti.com/assets/images/icons/icon_tblindicator_spt.png) no-repeat 0 -10px;
+  display: block;
+  height: 16px;
+  margin: 0 auto;
+  width: 16px; }
+
+a span.tblIndicator {
+  background: url(http://ti.com/assets/images/icons/icon_tblindicator_spt.png) no-repeat 0 -36px;
+  text-decoration: none; }
+
+a:hover span.tblIndicator {
+  background: url(http://ti.com/assets/images/icons/icon_tblindicator_spt.png) no-repeat 0 -62px;
+  text-decoration: none; }
+
+.formLine {
+  float: left; }
+
+.toolTipHelp {
+  padding: 1em;
+  font-size: 1em;
+  float: left;
+  display: block;
+  left: 10px;
+  position: relative; }
+  .toolTipHelp p {
+    margin: 0; }
+  .toolTipHelp span {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 14px;
+    left: -19px;
+    background: url(http://ti.com/assets/images/eStoreIconSet.png) no-repeat 0 0;
+    background-image: url(http://ti.com/assets/images/eStoreIconSet.svg), none; }
+  .toolTipHelp.boxC {
+    background-color: #189;
+    color: #fff;
+    border-radius: 0.2em;
+    box-shadow: 1px 1px 1px 1px #c0c0c0; }
+    .toolTipHelp.boxC span {
+      background-position: -140px -760px; }
+
+.same-height {
+  display: flex; }
+  .same-height * {
+    min-height: 1px; }
+  .same-height > div {
+    display: flex;
+    flex-direction: column; }
+  .same-height .featurebox, .same-height .stretch {
+    flex: 1;
+    -ms-flex-preferred-size: auto; }
+
+.price span.value {
+  font-size: 1.2em;
+  font-weight: 600; }
+
+.price.special span.value {
+  color: #c00; }
+
+.price.special span.label {
+  font-size: 1.2em;
+  font-weight: 600; }
+
+a {
+  color: #189;
+  text-decoration: none;
+  outline: 0; }
+  a:link:hover {
+    text-decoration: underline; }
+
+/*	&:visited
+		color: $color-link-visited*/
+a.more, .button.noborder {
+  background: url(http://ti.com/assets/images/iconMore.png) no-repeat 100% 60%;
+  background-image: url(http://ti.com/assets/images/iconMore.svg), none;
+  padding: 0 12px 0 0; }
+
+a.cta-red-cir {
+  background: url(http://ti.com/assets/images/cta-red-cir.png) no-repeat 0 0.2em;
+  background-image: url(http://ti.com/assets/images/cta-red-cir.svg), none;
+  padding: 0 0 0 1.3em; }
+
+.button {
+  display: inline-block;
+  font-size: 1em;
+  padding: .3em .6em;
+  border-radius: .2em;
+  border: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-color: #f9f9f9;
+  border: 1px solid #c0c0c0; }
+  .button:link:hover {
+    text-decoration: none; }
+  .button.btnD.arrow {
+    position: relative;
+    padding-right: 1.2em; }
+    .button.btnD.arrow span {
+      position: absolute;
+      top: 0.6em;
+      right: 0.3em;
+      width: 8px;
+      height: 12px;
+      background: url(http://ti.com/assets/images/iconMore.png) no-repeat 0 0;
+      background-image: url(http://ti.com/assets/images/iconMore.svg), none; }
+  .button.btnA, .button.red, .button.btnB, .button.black, .button.btnC, .button.teal {
+    font-weight: 600;
+    color: #fff !important;
+    background-color: #c00;
+    border: 0; }
+    .button.btnA:hover, .button.red:hover, .button.btnB:hover, .button.black:hover, .button.btnC:hover, .button.teal:hover {
+      background-color: #dd1111; }
+  .button.btnB, .button.black {
+    background-color: #333; }
+    .button.btnB:hover, .button.black:hover {
+      background-color: #444; }
+  .button.btnC, .button.teal {
+    background-color: #156; }
+    .button.btnC:hover, .button.teal:hover {
+      background-color: #067; }
+  .button.disabled, .button:disabled, .button:disabled:hover {
+    color: #fff;
+    background-color: #e0e0e0;
+    cursor: default; }
+  .button span.pdf, .button span.download, .button span.enlarge {
+    padding: .1em 0 0 1.8em;
+    display: inline-block;
+    background: url(http://ti.com/assets/images/icons/icon_m_pdf_btn_c.png) no-repeat 0 0; }
+  .button span.download {
+    background-image: url(http://ti.com/assets/images/icons/icon_m_doc-download_btn_c.png); }
+  .button span.enlarge {
+    background-image: url(http://ti.com/assets/images/icons/icon_m_zoomin_a.png); }
+  .button.pdf, .button.download {
+    background: #156 url(http://ti.com/assets/images/icons/icon_m_pdf_btn_c.png) no-repeat 0.4em 0.4em;
+    padding: .4em .8em .4em 2.2em; }
+    .button.pdf span, .button.download span {
+      display: block;
+      color: #88b8bd;
+      font-size: .7em;
+      font-weight: 400;
+      background: none; }
+  .button.download {
+    background-image: url(http://ti.com/assets/images/icons/icon_m_doc-download_btn_c.png); }
+  .button.lrg {
+    padding: .75em 1.75em; }
+  .button.prevNext {
+    position: relative;
+    color: #fff;
+    background: url(http://ti.com/assets/images/iconPrevNext.png) no-repeat right 0;
+    background-image: url(http://ti.com/assets/images/iconPrevNext.svg), none;
+    height: 28px;
+    padding: .3em .6em .3em 0;
+    border-radius: 0; }
+    .button.prevNext:after {
+      position: absolute;
+      top: 0;
+      background-position: 0 0;
+      width: 11px;
+      height: 28px;
+      content: ""; }
+    .button.prevNext.prev:after {
+      left: -11px; }
+    .button.prevNext.next {
+      background-position: 0 -100px;
+      padding: .3em 0 .3em .6em; }
+      .button.prevNext.next:after {
+        background-position: right -100px;
+        right: -11px; }
+  .button.noborder {
+    border: 0; }
+  .button + .button {
+    margin-left: 1em; }
+
+.btn1, .btn3 {
+  display: inline-block;
+  font-size: 1em;
+  padding: .3em .6em;
+  border-radius: .2em;
+  border: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-appearance: none;
+  font-weight: 600;
+  color: #fff !important;
+  background-color: #c00; }
+  .btn1:hover, .btn3:hover {
+    text-decoration: none;
+    background-color: #dd1111; }
+
+.btn3 {
+  background-color: #555; }
+  .btn3:hover {
+    background-color: #444; }
+
+.button-zoom {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: inline-block; }
+  .button-zoom:before {
+    background: rgba(0, 0, 0, 0.75);
+    top: 50%;
+    left: 50%;
+    font-size: 3em;
+    color: #FFF;
+    border-radius: .2em;
+    padding: .1em;
+    margin: -25px 0 0 -25px;
+    z-index: 1;
+    position: absolute;
+    content: "\e8b6"; }
+  .button-zoom:hover::before {
+    content: "\e8ff"; }
+
+ul.cta-title {
+  margin: 0; }
+  ul.cta-title li {
+    background: url(http://ti.com/assets/images/icons/cta-red-cir.png) no-repeat 0 0.2em;
+    padding: 0 0 0 1.3em; }
+
+ul.lined {
+  border-top: 1px dotted #c0c0c0;
+  margin-left: 0; }
+  ul.lined li {
+    border-bottom: 1px dotted #c0c0c0;
+    margin: 0;
+    padding: .5em 0;
+    background: no-repeat 0 .5em; }
+    ul.lined li.eval {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_board_a.png);
+      padding-left: 25px; }
+    ul.lined li.sample {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_chip_a.png);
+      padding-left: 25px; }
+    ul.lined li.dlDatasheet {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_doc-download_a.png);
+      padding-left: 25px; }
+    ul.lined li.pdf {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_pdf_a.png);
+      padding-left: 25px; }
+    ul.lined li.toolsSoftware {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_tools-software_a.png);
+      padding-left: 25px; }
+    ul.lined li.cart {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_cart_a.png);
+      padding-left: 25px; }
+    ul.lined li.prodFolder {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_folder_a.png);
+      padding-left: 25px; }
+    ul.lined li.doc {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_doc_a.png);
+      padding-left: 25px; }
+    ul.lined li.webench {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_webench_a.png);
+      padding-left: 25px; }
+    ul.lined li.email {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_email_a.png);
+      padding-left: 25px; }
+    ul.lined li.html {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_html_a.png);
+      padding-left: 25px; }
+    ul.lined li.video {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_video_a.png);
+      padding-left: 25px; }
+    ul.lined li.refdesign {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_ref-design_a.png);
+      padding-left: 1.8em; }
+    ul.lined li.refdesign {
+      background-image: url(http://ti.com/assets/images/icons/icon_m_ref-design_a.png);
+      padding-left: 25px; }
+    ul.lined li li {
+      border: 0;
+      padding: 0; }
+
+ul.arrow li {
+  background: url(http://ti.com/assets/images/grey-dbl-arrow.png) no-repeat 0 0.4em;
+  padding-left: 1em; }
+
+ul.pdf {
+  margin-left: 0; }
+  ul.pdf li {
+    background: url(http://ti.com/assets/images/icons/icon_s_pdf_a.png) no-repeat 0 0.1em;
+    padding-left: 20px; }
+    ul.pdf li.folder {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_folder_a.png); }
+    ul.pdf li.tool {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_tools-software_a.png); }
+    ul.pdf li.video {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_video_a.png); }
+    ul.pdf li.extlink {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_ext-link_a.png); }
+    ul.pdf li.software {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_download_a.png); }
+    ul.pdf li.cart {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_cart_a.png); }
+    ul.pdf li.doc {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_doc_a.png); }
+    ul.pdf li.evm {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_evm_a.png); }
+    ul.pdf li.samplechip {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_samplechip_a.png); }
+    ul.pdf li.webench {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_webench_a.png); }
+    ul.pdf li.email {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_email_a.png); }
+    ul.pdf li.html {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_html_a.png); }
+    ul.pdf li.refdesign {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_ref-design_a.png); }
+    ul.pdf li.refdesign {
+      background-image: url(http://ti.com/assets/images/icons/icon_s_ref-design_a.png); }
+
+/* View more button */
+.showMore .showContent, .ls-canvas .cnt.less, #bottomcontent .cnt.less {
+  max-height: 200px;
+  overflow: hidden; }
+
+.pageTitle2 .showMore .showContent {
+  max-height: 70px; }
+
+.showMore.showLess .showContent {
+  max-height: none; }
+
+.showMore .showButton, .cnt.less ~ .showMore, .showMore ~ .showLess {
+  font-size: .9em;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  height: 1px;
+  margin: 1em 0 0 0; }
+
+.showMore .showButton span, .cnt.less ~ .showMore a, .showMore ~ .showLess a {
+  position: relative;
+  top: -.8em;
+  background: #fff;
+  color: #189;
+  padding: 0 .5em;
+  border-radius: .2em;
+  cursor: pointer;
+  z-index: 1; }
+
+label {
+  display: inline-block;
+  vertical-align: middle; }
+
+input, select, textarea {
+  font-size: 1em;
+  color: #555; }
+
+input[type=text], input[type=password], select, textarea {
+  padding: .2em;
+  border: 1px solid #c0c0c0;
+  border-radius: .2em;
+  margin: 0;
+  outline: 0;
+  -webkit-transition: border .2s;
+  transition: border .2s; }
+  input[type=text]:focus, input[type=password]:focus, select:focus, textarea:focus {
+    border-color: #555; }
+
+input.search-button {
+  vertical-align: middle;
+  width: 28px;
+  height: 28px;
+  margin: 0 0 0 -30px;
+  padding: 0;
+  background: url(http://ti.com/assets/images/iconFolder.png) no-repeat 5px -394px;
+  background-image: url(http://ti.com/assets/images/iconFolder.svg), none;
+  border: 0;
+  cursor: pointer; }
+
+span.optional {
+  /* display: block */
+  color: #b0b0b0;
+  font-style: italic;
+  font-size: .8em; }
+
+/* used to be div.info*/
+.icon-info {
+  position: relative;
+  display: inline-block;
+  min-width: 18px;
+  min-height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+  background: url(http://ti.com/assets/images/iconMyTIinfoSprite.png) no-repeat 0 0;
+  background-image: url(http://ti.com/assets/images/iconMyTIinfoSprite.svg), none;
+  padding: 0 0 0 22px; }
+
+/*.info-2
+	position: relative
+	width: 100%
+	z-index: 1
+	left: 0
+	-webkit-transition:  max-height .2s, padding .2s, border .2s
+	transition:  max-height .2s, padding .2s, border .2s
+	overflow: hidden
+	display: block
+	max-height: 0
+	padding: 0
+	max-width: 500px
+
+	&.active
+		max-height: 1200px
+		padding-bottom: 1px
+
+	> div
+		padding: 1em 1.8em 1em 1em
+		border: 1px solid $color-grey4
+		border-radius: .2em
+		background: $color-white
+
+		p:last-child
+			margin-bottom: 0
+
+	.close
+		padding: 11px
+		position: absolute
+		top: .5em
+		right: 0
+		background: url(http://ti.com/assets/images/iconCloseModal.png) no-repeat 0 0
+		background-image: url(http://ti.com/assets/images/iconCloseModal.svg), none
+		cursor: pointer
+
+		&:active
+			background-position: 0 -100px*/
+form.responsive .row {
+  margin-bottom: 1em; }
+
+form.responsive .indent {
+  padding-left: 2em; }
+
+.error-check {
+  position: relative;
+  padding: .2em 0 0 1.2em;
+  color: #c00; }
+  .error-check:before {
+    position: absolute;
+    background: url(http://ti.com/assets/images/ic-form-error.png) no-repeat 0 0;
+    background-image: url(http://ti.com/assets/images/ic-form-error.svg), none;
+    background-size: 100%;
+    top: .4em;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    content: " "; }
+  .error-check.summary {
+    background-color: #f4dfdf;
+    padding: 1em 1em 1em 3.3em;
+    border: 1px solid #900;
+    border-radius: .2em; }
+    .error-check.summary:before {
+      top: .7em;
+      left: 1em;
+      width: 2em;
+      height: 2em; }
+  .error-check.success {
+    background-color: #fff;
+    color: #333;
+    border-color: #096; }
+    .error-check.success:before {
+      background-image: url(http://ti.com/assets/images/ic-form-success.png);
+      background-image: url(http://ti.com/assets/images/ic-form-success.svg), none; }
+
+.filter-buttons {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px dotted #555; }
+  .filter-buttons button {
+    white-space: normal;
+    color: #189;
+    text-align: left;
+    padding-right: 2.3em; }
+    .filter-buttons button:hover {
+      border: 1px solid #e0e0e0;
+      color: #e0e0e0; }
+    .filter-buttons button.close:before {
+      content: "\E5CD";
+      color: #555;
+      font-size: 1.2em;
+      margin: .1em -1.5em -.5em 0;
+      padding: 0 0 0 .75em;
+      float: right; }
+    .filter-buttons button.close:hover:before {
+      color: #c00; }
+    .filter-buttons button.more:before {
+      content: "\E5CC";
+      float: right;
+      font-size: 1.3em; }
+  .filter-buttons ul {
+    margin-left: 0; }
+    .filter-buttons ul li {
+      background: none;
+      margin-left: 0;
+      float: left; }
+    .filter-buttons ul li ul li {
+      background: transparent url(http://ti.com/assets/images/hierarchy-indicator.png) no-repeat scroll 0.5em -0.25em;
+      padding-left: 1.5em;
+      margin-top: -.25em;
+      padding-top: 0; }
+
+.tooltip .tooltip-content {
+  position: absolute;
+  background: #189;
+  border-radius: .2em;
+  color: #fff;
+  font-size: .9em;
+  padding: .5em 1em;
+  opacity: 0;
+  max-width: 500px;
+  max-height: 0;
+  margin: 0;
+  transition: opacity .2s, max-height .2s, margin .2s; }
+
+.tooltip a + .tooltip-content, .tooltip img + .tooltip-content {
+  margin-top: .5em;
+  z-index: -1; }
+
+.tooltip input:focus + .tooltip-content, .tooltip textarea:focus + .tooltip-content, .tooltip a:hover + .tooltip-content, .tooltip img:hover + .tooltip-content {
+  opacity: 1;
+  max-height: 200px;
+  margin-left: 1.5em;
+  z-index: 1; }
+
+table {
+  border-collapse: collapse;
+  font-size: 1em; }
+
+.tblstandard, table.sort {
+  position: relative;
+  /*z-index: 1*/
+  border-top: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  font-size: 1em;
+  margin: 0 0 1em 0; }
+  .tblstandard th, .tblstandard td, table.sort th, table.sort td {
+    background: #fff;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: top;
+    padding: .5em; }
+    .tblstandard th.image, .tblstandard td.image, table.sort th.image, table.sort td.image {
+      vertical-align: middle;
+      text-align: center; }
+  .tblstandard th, table.sort th {
+    background: #f0f0f0;
+    text-align: left;
+    vertical-align: middle;
+    color: #333; }
+
+.tblstandard tr.heading2 th {
+  background: #b0b0b0; }
+
+.tblstandard tr.heading3 th {
+  background: #156; }
+  .tblstandard tr.heading3 th, .tblstandard tr.heading3 th a, .tblstandard tr.heading3 th a:hover, .tblstandard tr.heading3 th a:visited {
+    color: #fff !important; }
+
+.tblstandard tr.hilighted td, .tblstandard td.hilighted {
+  background: #ffffe5; }
+
+table.noBorder td {
+  border: 0; }
+
+table.sort th.header {
+  background: #f0f0f0 url(http://ti.com/assets/images/sort.png) no-repeat right center;
+  cursor: pointer;
+  text-align: left;
+  padding-right: 20px;
+  vertical-align: middle; }
+
+table.sort th.headerSortUp {
+  background: #c0c0c0 url(http://ti.com/assets/images/sortAsc.png) no-repeat right center; }
+
+table.sort th.headerSortDown {
+  background: #c0c0c0 url(http://ti.com/assets/images/sortDesc.png) no-repeat right center; }
+
+.control_table {
+  width: auto !important;
+  background: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  border-bottom: 0; }
+  .control_table td {
+    padding: 1em 1em 0 !important;
+    white-space: nowrap; }
+  .control_table .match {
+    font-weight: 600;
+    margin: 0 0 1em 0 !important; }
+
+.tblstandard.tblcomparison {
+  line-height: 1.5em;
+  border: 0;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0; }
+  .tblstandard.tblcomparison th, .tblstandard.tblcomparison td {
+    background: none;
+    color: #444;
+    text-align: center;
+    border-left: 0;
+    border-right: 0; }
+  .tblstandard.tblcomparison thead tr {
+    border-left: 0; }
+  .tblstandard.tblcomparison thead tr td:first-child, .tblstandard.tblcomparison th {
+    border-bottom: 0; }
+  .tblstandard.tblcomparison td, .tblstandard.tblcomparison th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-right: 0; }
+  .tblstandard.tblcomparison tbody tr:first-child {
+    border-left: 0;
+    border-top: 1px solid #118899; }
+  .tblstandard.tblcomparison tbody tr > th {
+    background: none;
+    text-align: left;
+    font-weight: 700;
+    color: #555;
+    border-right: 0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f9f9f9; }
+  .tblstandard.tblcomparison tbody th[colspan] {
+    font-size: 1.2em;
+    color: #000; }
+  .tblstandard.tblcomparison tbody tr > th[scope='row'] {
+    background: transparent; }
+  .tblstandard.tblcomparison tbody tr > td:last-child {
+    text-align: center; }
+  .tblstandard.tblcomparison tbody tr:last-child th, .tblstandard.tblcomparison tbody tr:last-child td {
+    border-bottom: 0; }
+  .tblstandard.tblcomparison span.tblIndicator {
+    display: inline-block;
+    position: relative;
+    top: 3px; }
+  .tblstandard.tblcomparison img {
+    height: auto; }
+
+.tblstandard.tblcomparison.hover-row tbody tr:hover {
+  background: #edf7f8; }
+
+.modalAlert-bg {
+  z-index: 10002;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: .60;
+  filter: alpha(opacity=60); }
+
+.modalAlert {
+  z-index: 10003;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .modalAlert .modalWindow {
+    position: relative;
+    background: #fff;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 94%;
+    max-height: 500px;
+    overflow: auto;
+    padding: 1em 3em 2em 3em;
+    border-radius: .2em;
+    box-shadow: 0 0 10px #000; }
+    .modalAlert .modalWindow .close {
+      margin: -.5em -2.5em;
+      position: absolute;
+      color: #555 !important;
+      background: url(http://ti.com/assets/images/iconCloseModal.png);
+      background-image: url(http://ti.com/assets/images/iconCloseModal.svg), none;
+      width: 18px;
+      height: 18px; }
+      .modalAlert .modalWindow .close:active {
+        background-position: 0 -100px; }
+    .modalAlert .modalWindow .userInfo {
+      float: left;
+      margin: 1em 0 0 0; }
+
+.modalWindow-input {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none; }
+
+.modalWindow-input:target {
+  opacity: 1;
+  pointer-events: auto; }
+
+.modalWindow-input > div {
+  width: 600px;
+  opacity: 1;
+  position: relative;
+  margin: 10% auto;
+  padding: 20px 20px 20px 25px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 10px #000; }
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  left: 5px;
+  text-align: center;
+  top: 5px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px; }
+
+.close:hover {
+  background: #118899; }
+
+#tiHeader {
+  position: relative;
+  z-index: 10001;
+  width: 100%;
+  min-width: 1230px;
+  background: #fff; }
+  #tiHeader ul > li {
+    padding: 0;
+    background: none; }
+  #tiHeader .top li, #tiHeader .nav li {
+    float: left;
+    margin: 0; }
+  #tiHeader .top {
+    margin-top: 1em; }
+    #tiHeader .top ul {
+      padding: 0 2em;
+      padding: 0 2rem;
+      margin-left: 0; }
+  #tiHeader .nav {
+    position: relative;
+    /*z-index: 1*/
+    background: #c00; }
+    #tiHeader .nav ul {
+      padding: 0 2em;
+      padding: 0 2rem;
+      margin-left: -1em; }
+    #tiHeader .nav li a, #tiHeader .nav li a:hover {
+      /*position: relative*/
+      text-decoration: none;
+      padding: .8em 1em;
+      display: block;
+      color: #fff;
+      font-weight: 600; }
+    #tiHeader .nav li.active a {
+      background: #fff;
+      color: #000; }
+    #tiHeader .nav li.thirdPartyID a, #tiHeader .nav li.thirdPartyID a:hover {
+      font-size: 1.6em;
+      padding: .2em .7em .3em .5em !important;
+      margin: 0 1em 0 0;
+      background: url(http://ti.com/assets/images/iconMore2.png) no-repeat right 0.7em;
+      background-image: url(http://ti.com/assets/images/iconMore2.svg), none; }
+  #tiHeader .column > ul {
+    margin-left: 0; }
+  #tiHeader li#top_logo a {
+    background: url(../../images/ic-logo.png) no-repeat 0 0;
+    background-image: url(../../images/ic-logo.svg), none;
+    width: 280px;
+    height: 36px;
+    display: block; }
+  #tiHeader li#top_search {
+    padding: 0 3em; }
+  #tiHeader li#top_login {
+    float: right;
+    margin: .6em 1em 0 0; }
+  #tiHeader li#nav_history, #tiHeader li#nav_cart, #tiHeader li#nav_language, #tiHeader li#nav_profile, #tiHeader li#nav_search {
+    float: right; }
+    #tiHeader li#nav_history a:before, #tiHeader li#nav_cart a:before, #tiHeader li#nav_language a:before, #tiHeader li#nav_profile a:before, #tiHeader li#nav_search a:before {
+      color: #fff;
+      font-size: 1.4em;
+      margin-right: .2em; }
+    #tiHeader li#nav_history.active a:before, #tiHeader li#nav_cart.active a:before, #tiHeader li#nav_language.active a:before, #tiHeader li#nav_profile.active a:before, #tiHeader li#nav_search.active a:before {
+      color: #c00; }
+  #tiHeader li#nav_history a:before {
+    content: "\e889"; }
+  #tiHeader li#nav_history.active a:before {
+    content: "\e889 "; }
+  #tiHeader li#nav_cart a:before {
+    content: "\e8cc "; }
+  #tiHeader li#nav_cart.active a:before {
+    content: "\e8cc"; }
+  #tiHeader li#nav_language a:before {
+    content: "\e894 "; }
+  #tiHeader li#nav_language.active a:before {
+    content: "\e894"; }
+  #tiHeader li#nav_profile a:before {
+    font-family: 'ti-icons';
+    content: "\e600 "; }
+  #tiHeader li#nav_profile.active a:before {
+    content: "\e600"; }
+  #tiHeader li#nav_search a:before {
+    content: "\e8b6 "; }
+  #tiHeader li#nav_search.active a:before {
+    content: "\e8b6"; }
+  #tiHeader li#nav_menu, #tiHeader li#nav_search {
+    display: none; }
+  #tiHeader .columnGroup {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch; }
+  #tiHeader .column {
+    float: left;
+    padding: 0 1em 0 0; }
+    #tiHeader .column.middle {
+      padding-top: 2.1em; }
+    #tiHeader .column.border {
+      border-left: 1px dotted #e0e0e0;
+      padding-left: 1em; }
+  #tiHeader .sub {
+    position: relative;
+    display: none;
+    padding: 1em 2em;
+    padding: 1em 2rem;
+    border: 1px solid #e0e0e0;
+    border-top: 0;
+    font-size: .9em;
+    background: #fff;
+    background: -moz-linear-gradient(top, #fff 0%, #f9f9f9 100%);
+    background: -webkit-linear-gradient(top, #fff 0%, #f9f9f9 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #f9f9f9 100%); }
+    #tiHeader .sub.active {
+      display: block; }
+    #tiHeader .sub .expand {
+      position: absolute;
+      bottom: 0;
+      width: 2em;
+      height: 2em;
+      cursor: pointer; }
+      #tiHeader .sub .expand:before {
+        margin-left: .3em;
+        font-size: 1rem;
+        content: "\e5cf"; }
+      #tiHeader .sub .expand.left {
+        left: 0; }
+      #tiHeader .sub .expand.right {
+        right: 0; }
+    #tiHeader .sub.subExpanded .expand:before {
+      content: "\e5ce"; }
+    #tiHeader .sub h3 {
+      font-size: 1.1em;
+      color: #c00;
+      font-weight: 600; }
+      #tiHeader .sub h3 a {
+        color: #c00; }
+    #tiHeader .sub p {
+      max-width: 200px; }
+    #tiHeader .sub a {
+      color: #333; }
+  #tiHeader #sub_history {
+    height: auto !important; }
+    #tiHeader #sub_history .ABtitle {
+      font-size: 1.1em;
+      color: #c00;
+      font-weight: 600;
+      padding-left: 0; }
+      #tiHeader #sub_history .ABtitle span {
+        font-size: .7em;
+        font-weight: 400;
+        margin: 0 0 0 .5em; }
+        #tiHeader #sub_history .ABtitle span a {
+          color: #c00; }
+    #tiHeader #sub_history #activityBar-content-normal {
+      display: block; }
+    #tiHeader #sub_history #activityBar-content-expanded {
+      display: none; }
+    #tiHeader #sub_history.subExpanded #activityBar-content-normal {
+      display: none; }
+    #tiHeader #sub_history.subExpanded #activityBar-content-expanded {
+      display: block; }
+    #tiHeader #sub_history.subExpanded .columnGroup {
+      height: auto; }
+    #tiHeader #sub_history ul {
+      float: left;
+      margin: 0; }
+    #tiHeader #sub_history #ABproduct, #tiHeader #sub_history #ABproduct-before {
+      width: 50%; }
+    #tiHeader #sub_history #ABtechdocs, #tiHeader #sub_history #ABtechdocs-before {
+      width: 30%;
+      border-left: 1px dotted #e0e0e0;
+      padding-left: 1em; }
+    #tiHeader #sub_history #ABsearch, #tiHeader #sub_history #ABsearch-before {
+      width: 20%;
+      border-left: 1px dotted #e0e0e0;
+      padding-left: 1em; }
+    #tiHeader #sub_history .activityBar-promoLine {
+      /*position: absolute*/
+      /*left: 3%*/
+      /*bottom: .5em*/
+      /*width: 94%*/
+      text-align: center;
+      border-top: 1px dotted #e0e0e0;
+      padding-top: .5em;
+      /*margin: .5em 0 -.5em 0*/
+      font-weight: 600; }
+    #tiHeader #sub_history .ABPDpin, #tiHeader #sub_history .ABPDtrash {
+      display: inline-block;
+      width: 2em;
+      height: 1.4em; }
+      #tiHeader #sub_history .ABPDpin:before, #tiHeader #sub_history .ABPDtrash:before {
+        color: #b0b0b0;
+        margin: .2em 0 0 .5em; }
+      #tiHeader #sub_history .ABPDpin:hover, #tiHeader #sub_history .ABPDtrash:hover {
+        text-decoration: none; }
+    #tiHeader #sub_history .ABPDpin:before {
+      font-family: 'ti-icons';
+      content: "\e601"; }
+    #tiHeader #sub_history .ABPDpin.pinned:before {
+      color: #189; }
+    #tiHeader #sub_history .ABPDpin.disabled {
+      cursor: auto; }
+      #tiHeader #sub_history .ABPDpin.disabled:before {
+        color: #f0f0f0; }
+    #tiHeader #sub_history .ABPDtrash {
+      margin-right: .5em; }
+      #tiHeader #sub_history .ABPDtrash:before {
+        content: "\e14c"; }
+    #tiHeader #sub_history .totalPinnedItems {
+      font-size: .8em;
+      padding-left: 0; }
+    #tiHeader #sub_history .ABPDseparator {
+      border-top: 1px dotted #e0e0e0;
+      height: 1px; }
+  #tiHeader #sub_applications .column {
+    width: 16.5%; }
+  #tiHeader ul.cartItem li {
+    position: relative;
+    padding-right: 5em;
+    border-bottom: 1px dotted #e0e0e0;
+    margin-bottom: 0;
+    line-height: 1.5; }
+  #tiHeader #sub_cart {
+    /*a.button
+			margin: 2.5em 6em 0 0*/ }
+    #tiHeader #sub_cart ul.cartItem span {
+      position: absolute;
+      right: 0; }
+  #tiHeader .count {
+    position: relative;
+    display: inline-block;
+    background: #c00;
+    border-radius: 1em;
+    color: #fff;
+    font-size: .7em;
+    font-weight: 600;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    left: .2em;
+    top: -.2em;
+    line-height: 1.5; }
+  #tiHeader [id*="_search"] form {
+    position: relative;
+    display: inline-block;
+    /*z-index: 2*/
+    border: 1px solid #c0c0c0;
+    border-radius: .2em; }
+    #tiHeader [id*="_search"] form:before {
+      float: right;
+      font-size: 1.2em;
+      margin: .5em .2em;
+      content: "\e8b6"; }
+  #tiHeader .searchFilterLable {
+    display: inline-block;
+    padding: .5em;
+    border-radius: .2em 0 0 .2em;
+    border-right: 1px solid #c0c0c0;
+    background: #f9f9f9;
+    cursor: pointer; }
+    #tiHeader .searchFilterLable:before {
+      float: right;
+      margin: .2em 0 0 .2em;
+      content: "\e5cf"; }
+  #tiHeader .searchInput {
+    padding: .5em;
+    border: 0 !important;
+    width: 30em;
+    background: none; }
+  #tiHeader .searchButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: 0;
+    width: 2em;
+    height: 2.5em;
+    cursor: pointer;
+    z-index: 1; }
+  #tiHeader .searchFlyout {
+    position: absolute;
+    background: #f9f9f9;
+    border: 1px solid #c0c0c0;
+    display: block;
+    padding: 1em;
+    max-width: 35.3em;
+    font-size: .9em;
+    z-index: 1;
+    display: none; }
+    #tiHeader .searchFlyout.active {
+      display: block; }
+    #tiHeader .searchFlyout h4 {
+      font-size: 1em; }
+    #tiHeader .searchFlyout.filtered h4 {
+      display: none; }
+    #tiHeader .searchFlyout p {
+      border-bottom: 1px dotted #e0e0e0;
+      margin: 0 0 .5em 0;
+      padding: 0;
+      text-align: left; }
+    #tiHeader .searchFlyout a {
+      color: #333; }
+    #tiHeader .searchFlyout div {
+      display: none; }
+      #tiHeader .searchFlyout div.active {
+        display: block; }
+    #tiHeader .searchFlyout .searchFilter p {
+      background: url(http://ti.com/assets/images/iconSearch.png) no-repeat -2px -402px;
+      background-image: url(http://ti.com/assets/images/iconSearch.svg), none;
+      padding-left: 20px; }
+      #tiHeader .searchFlyout .searchFilter p.product {
+        background-position: -2px -702px; }
+      #tiHeader .searchFlyout .searchFilter p.technicalDocument {
+        background-position: -2px -1002px; }
+      #tiHeader .searchFlyout .searchFilter p.support {
+        background-position: -2px -1302px; }
+      #tiHeader .searchFlyout .searchFilter p.crossReference {
+        background-position: -2px -1602px; }
+      #tiHeader .searchFlyout .searchFilter p.application {
+        background-position: -2px -1902px; }
+      #tiHeader .searchFlyout .searchFilter p.forum {
+        background-position: -2px -2202px; }
+      #tiHeader .searchFlyout .searchFilter p.blog {
+        background-position: -2px -2502px; }
+      #tiHeader .searchFlyout .searchFilter p.designNetwork {
+        background-position: -2px -2802px; }
+      #tiHeader .searchFlyout .searchFilter p.developerWiki {
+        background-position: -2px -3102px; }
+      #tiHeader .searchFlyout .searchFilter p.training {
+        background-position: -2px -3402px; }
+      #tiHeader .searchFlyout .searchFilter p.video {
+        background-position: -2px -3702px; }
+    #tiHeader .searchFlyout .searchHistory {
+      margin: 2em 0 0 0; }
+    #tiHeader .searchFlyout.focused {
+      right: 0;
+      width: 35.3em; }
+      #tiHeader .searchFlyout.focused .searchFilter p {
+        display: none; }
+        #tiHeader .searchFlyout.focused .searchFilter p.product, #tiHeader .searchFlyout.focused .searchFilter p.technicalDocument, #tiHeader .searchFlyout.focused .searchFilter p.support {
+          display: block; }
+  #tiHeader.simplified {
+    border-bottom: 8px solid #c00; }
+
+footer#tiFooter {
+  clear: both;
+  color: #b0b0b0;
+  font-size: .9em;
+  padding: 1em 2em;
+  padding: 1em 2rem;
+  border-top: 1px solid #e0e0e0;
+  background: #fff; }
+  footer#tiFooter p {
+    max-width: none; }
+  footer#tiFooter a {
+    color: #b0b0b0; }
+    footer#tiFooter a:hover {
+      color: #c00; }
+  footer#tiFooter .link {
+    float: left;
+    width: 80%; }
+    footer#tiFooter .link a.mobileSite {
+      background: url(http://ti.com/assets/images/mobile.gif) no-repeat 0 0;
+      padding: 5px 0 0 14px; }
+  footer#tiFooter .social {
+    float: right; }
+    footer#tiFooter .social li {
+      float: left;
+      background: none;
+      padding: 0;
+      margin: 0 0 0 1em; }
+      footer#tiFooter .social li a {
+        background: url(http://ti.com/assets/images/icons/icon_follow-us-facebook.png) no-repeat 0 0;
+        display: block;
+        width: 16px;
+        height: 16px; }
+    footer#tiFooter .social li#twitter a {
+      background-image: url(http://ti.com/assets/images/icons/icon_follow-us-twitter.png); }
+    footer#tiFooter .social li#google a {
+      background-image: url(http://ti.com/assets/images/icons/icon_google.png); }
+    footer#tiFooter .social li#linkedin a {
+      background-image: url(http://ti.com/assets/images/icons/icon_linkedin.png); }
+    footer#tiFooter .social li#e2e a {
+      background-image: url(http://ti.com/assets/images/icons/e2e_footer.png); }
+    footer#tiFooter .social li#weibo a {
+      background-image: url(http://ti.com/assets/images/icons/sina_weibo_icon_cn_footer.png); }
+    footer#tiFooter .social li#cne2e a {
+      background-image: url(http://ti.com/assets/images/icons/deyisupport_icon_cn_footer.png); }
+
+.test_delete_later {
+  background-color: blue; }
+
+.prod-banner {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  max-width: 602px; }
+  .prod-banner.square {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    max-width: 302px !important;
+    min-width: 200px !important; }
+  .prod-banner.no-border {
+    border: none;
+    max-width: 600px; }
+  .prod-banner.center {
+    margin: 0 auto; }
+  .prod-banner.right {
+    margin-left: auto;
+    margin-right: 0; }
+  .prod-banner.no-border.square {
+    border: none;
+    max-width: 300px; }
+  .prod-banner.no-border .slides {
+    border: none; }
+  .prod-banner * {
+    padding: 0;
+    /* margin:0; */ }
+  .prod-banner img {
+    max-width: 100%; }
+  .prod-banner .slides {
+    position: relative;
+    border: 1px solid #c0c0c0; }
+    .prod-banner .slides > ul {
+      position: absolute;
+      overflow: hidden;
+      white-space: nowrap;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1; }
+      .prod-banner .slides > ul > li {
+        position: absolute;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        line-height: 0;
+        top: 0;
+        left: 100%;
+        bottom: 0; }
+    .prod-banner .slides li.selected {
+      left: 0;
+      z-index: 1; }
+    .prod-banner .slides.fade li {
+      left: 0 !important;
+      right: 0 !important; }
+    .prod-banner .slides a {
+      display: block;
+      position: relative; }
+      .prod-banner .slides a img {
+        border: 0; }
+    .prod-banner .slides .position {
+      position: static;
+      display: block;
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
+      .prod-banner .slides .position img {
+        opacity: 0;
+        z-index: 0; }
+    .prod-banner .slides > .arrow {
+      position: absolute;
+      width: 80px;
+      top: 0;
+      bottom: 0;
+      text-indent: -99999em;
+      outline: none;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 5;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); }
+    .prod-banner .slides .arrow.next {
+      background: url(http://ti.com/assets/images/slideNext.png) center right no-repeat;
+      right: 0; }
+    .prod-banner .slides .arrow.prev {
+      background: url(http://ti.com/assets/images/slidePrev.png) center left no-repeat;
+      left: 0; }
+  .prod-banner .prod-control {
+    position: relative;
+    width: 100%;
+    background: url(http://ti.com/assets/images/slideBg.png) no-repeat;
+    background-size: 100% 100%;
+    height: 22px; }
+    .prod-banner .prod-control ul {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0px;
+      text-align: center; }
+      .prod-banner .prod-control ul li {
+        margin: 5px 2px;
+        display: inline-block;
+        zoom: 1;
+        background: url(http://ti.com/assets/images/slideNav_off.png) no-repeat;
+        background/*\**/: url(http://ti.com/assets/images/slideNav_off_low.png) no-repeat\9;
+        /* hack for IE8 */
+        background-size: 100% 100%;
+        text-indent: -99999em !important;
+        width: 9px;
+        height: 9px;
+        cursor: pointer; }
+        .prod-banner .prod-control ul li.selected {
+          background: url(http://ti.com/assets/images/slideNav_on.png) no-repeat;
+          background/*\**/: url(http://ti.com/assets/images/slideNav_on_low.png) no-repeat\9;
+          /* hack for IE8 */
+          background-size: 100% 100%; }
+
+/* for Resposive Banner */
+.isSmallScreen {
+  display: none; }
+
+@media (max-width: 639px) {
+  .mobile .isSmallScreen {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 1px;
+    overflow: hidden; } }
+
+.overviewHeader {
+  background: url(http://ti.com/assets/images/valuePropHeaders/22244_generic_bkgd.jpg) no-repeat 0 0;
+  height: 163px;
+  z-index: 0;
+  max-width: 943px; }
+  .overviewHeader .overviewHeaderFade {
+    background: url(http://ti.com/assets/images/valuePropHeaders/overviewHeader-fg.png) no-repeat 0 0;
+    display: block;
+    height: 163px;
+    background-size: 100% 163px;
+    position: relative;
+    z-index: 0;
+    padding-top: 2em; }
+  .overviewHeader .valprop-header, .overviewHeader h1 {
+    font-size: 2.2em;
+    font-weight: 200;
+    padding-top: 10px;
+    color: #333;
+    margin-bottom: 0.5em; }
+    .overviewHeader .valprop-header span, .overviewHeader h1 span {
+      font-weight: bold;
+      color: #c00; }
+  .overviewHeader .valprop-sub-header {
+    font-weight: 200;
+    padding-right: 1em;
+    color: #555;
+    font-size: 1.3em; }
+  .overviewHeader .c8, .overviewHeader .c4, .overviewHeader .c12 {
+    z-index: 1; }
+  .overviewHeader .bracket {
+    background: url(http://ti.com/assets/images/valuePropHeaders/bracket-divider.png) no-repeat 0 0;
+    display: block;
+    height: 71px;
+    position: relative;
+    width: 70px;
+    z-index: 100;
+    margin-bottom: -71px;
+    left: -20px; }
+  .overviewHeader .slide, .overviewHeader .frame {
+    background-image: none;
+    max-height: 163px;
+    max-width: 277px;
+    width: 277px;
+    height: 163px; }
+  .overviewHeader.slides .slide, .overviewHeader.frames .frame {
+    position: absolute;
+    opacity: 0; }
+  .overviewHeader.automotive {
+    background-image: url(http://ti.com/assets/images/valuePropHeaders/22244_automotive_bkgd.jpg); }
+  .overviewHeader.audio {
+    background-image: url(http://ti.com/assets/images/valuePropHeaders/22244_audio_bkgd.jpg); }
+  .overviewHeader.dataConverters {
+    background-image: url(http://ti.com/assets/images/valuePropHeaders/22244_data_converter_bkgd.jpg); }
+  .overviewHeader.industrialStrength {
+    background-image: url(http://ti.com/assets/images/valuePropHeaders/22244_industrial_strength_bkgd.jpg); }
+  .overviewHeader.powerMgmt {
+    background-image: url(http://ti.com/assets/images/valuePropHeaders/22244_power_mgmt_bkgd.jpg); }
+  .overviewHeader.sensingTech {
+    background-image: url(http://ti.com/assets/images/valuePropHeaders/22244_sensingt_bkgd.jpg); }
+  .overviewHeader.amplifiers {
+    background-image: url(http://ti.com/assets/images/valuePropHeaders/22244_amplifiers_bkgd.jpg); }
+  .overviewHeader .off {
+    display: none; }
+  .overviewHeader .valprop-emphasis {
+    color: #c00; }
+
+.collapsible .trigger, .collapsible .click {
+  cursor: pointer; }
+  .collapsible .trigger:before, .collapsible .click:before {
+    background: #189;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1em;
+    margin: .2em .5em 0 0;
+    content: '\e5ce'; }
+
+.collapsible .content, .collapsible .collapsed {
+  display: none; }
+
+.collapsible.collapsed .trigger:before {
+  content: '\e5cf'; }
+
+.collapsible.divided:not(.collapsed) {
+  border: 1px solid #e0e0e0;
+  border-width: 1px 0;
+  margin: 1em 0;
+  padding: 1em 0; }
+
+.collapsible.boxed {
+  background: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  margin-bottom: -1px; }
+  .collapsible.boxed .trigger {
+    padding: 1em;
+    margin-bottom: 0; }
+    .collapsible.boxed .trigger:before {
+      background-color: transparent;
+      color: #b0b0b0;
+      font-size: 1.2em;
+      margin: .1em -.3em 0 0;
+      float: right; }
+  .collapsible.boxed .content {
+    padding: 0 1em; }
+
+.collapsible.text .trigger {
+  position: relative;
+  width: 100%;
+  height: 3em;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  margin: -3em 0 1em;
+  margin-top: -2.5em\9; }
+  .collapsible.text .trigger:before {
+    position: absolute;
+    bottom: -.5em;
+    bottom: -.3em\9;
+    background: #fff;
+    padding: 0 .5em;
+    padding-left: 0\9;
+    color: #189;
+    font-family: 'Open Sans';
+    content: 'less'; }
+
+.collapsible.text.collapsed .trigger {
+  background: none;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0 ); }
+  .collapsible.text.collapsed .trigger:before {
+    content: 'more'; }
+
+.tblstandard .collapsible .trigger:before {
+  background: #fff;
+  color: #189;
+  font-family: 'Open Sans';
+  font-size: .9em;
+  content: 'less';
+  margin: .5em 0 0 0; }
+
+.tblstandard .collapsible.collapsed .trigger:before {
+  content: '... more'; }
+
+.tblstandard .collapsible .click:before {
+  background: #fff;
+  color: #189;
+  font-family: 'Open Sans';
+  content: '...'; }
+
+.collapsible .collapsible-item {
+  border: 1px solid transparent;
+  border-width: 1px 0; }
+  .collapsible .collapsible-item .collapsible-item-trigger {
+    clear: both;
+    margin: 0;
+    padding: .8em .8em;
+    cursor: pointer;
+    transition: background 500ms;
+    background: none; }
+    .collapsible .collapsible-item .collapsible-item-trigger:before {
+      width: 1em;
+      margin: .2em .6em 0 0;
+      content: "";
+      text-align: center;
+      color: white;
+      border-radius: 4px;
+      background: #189;
+      font-size: 1em; }
+    .collapsible .collapsible-item .collapsible-item-trigger:hover {
+      background: #f9f9f9; }
+  .collapsible .collapsible-item .collapsible-item-content {
+    display: none;
+    margin: .8em; }
+  .collapsible .collapsible-item h2, .collapsible .collapsible-item h3 {
+    font-size: 1.2em; }
+  .collapsible .collapsible-item h4, .collapsible .collapsible-item h5 {
+    font-size: 1.0em; }
+
+.collapsible .collapsible-item.is-expanded {
+  border: 1px dotted #c0c0c0;
+  border-width: 1px 0; }
+  .collapsible .collapsible-item.is-expanded .collapsible-item-trigger {
+    background: none; }
+    .collapsible .collapsible-item.is-expanded .collapsible-item-trigger:before {
+      content: "";
+      background: #c00; }
+    .collapsible .collapsible-item.is-expanded .collapsible-item-trigger:hover {
+      background: none; }
+
+.collapsible.mod-collapsible-bg .collapsible-item .collapsible-item-trigger {
+  background: #f9f9f9; }
+  .collapsible.mod-collapsible-bg .collapsible-item .collapsible-item-trigger:hover {
+    background: #eee; }
+
+.collapsible.mod-collapsible-bg .collapsible-item.is-expanded .collapsible-item-trigger {
+  background: transparent; }
+
+.collapsible.mod-collapsible-toolbox .collapsible-item .collapsible-item-trigger {
+  background: #f9f9f9; }
+  .collapsible.mod-collapsible-toolbox .collapsible-item .collapsible-item-trigger:before {
+    float: right;
+    margin: .3em .2em 0 0;
+    transition: color 500ms;
+    color: #b0b0b0;
+    background: transparent; }
+  .collapsible.mod-collapsible-toolbox .collapsible-item .collapsible-item-trigger:hover {
+    background: #eee; }
+
+.collapsible.mod-collapsible-toolbox .collapsible-item ul.collapsible-item-content {
+  margin: 0 0 -1px 0;
+  padding: 0; }
+  .collapsible.mod-collapsible-toolbox .collapsible-item ul.collapsible-item-content li {
+    padding: .6em .8em; }
+
+.collapsible.mod-collapsible-toolbox .collapsible-item div.collapsible-item-content {
+  margin: .8em;
+  padding: 0; }
+
+.collapsible.mod-collapsible-toolbox .collapsible-item.is-expanded {
+  border-color: transparent; }
+  .collapsible.mod-collapsible-toolbox .collapsible-item.is-expanded .collapsible-item-trigger {
+    background: #f9f9f9; }
+    .collapsible.mod-collapsible-toolbox .collapsible-item.is-expanded .collapsible-item-trigger:before {
+      background: transparent; }
+    .collapsible.mod-collapsible-toolbox .collapsible-item.is-expanded .collapsible-item-trigger:hover {
+      background: #eee; }
+
+.collapsible.mod-collapsible-text .collapsible-item .collapsible-item-trigger {
+  position: relative;
+  width: 100%;
+  height: 4em;
+  margin: -3.5em 0 1em 0;
+  padding: 0;
+  cursor: pointer;
+  transition: background 500ms;
+  border-bottom: 1px solid #e0e0e0;
+  background: none;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0 ); }
+  .collapsible.mod-collapsible-text .collapsible-item .collapsible-item-trigger:before {
+    position: absolute;
+    bottom: -.5em;
+    left: 50%;
+    display: block;
+    width: auto;
+    margin: 0 0 0 -1em;
+    padding: 0 0 0 .4em;
+    background: #fff;
+    font-family: 'Material Icons';
+    content: "";
+    color: #189;
+    z-index: 3; }
+  .collapsible.mod-collapsible-text .collapsible-item .collapsible-item-trigger span {
+    display: inline-block;
+    position: relative;
+    top: 3.2em;
+    left: 50%;
+    padding: 0 .6em;
+    background-color: #fff;
+    z-index: 2;
+    color: #189; }
+  .collapsible.mod-collapsible-text .collapsible-item .collapsible-item-trigger:hover {
+    border-color: #c0c0c0; }
+    .collapsible.mod-collapsible-text .collapsible-item .collapsible-item-trigger:hover:before, .collapsible.mod-collapsible-text .collapsible-item .collapsible-item-trigger:hover span {
+      color: #c00; }
+  .collapsible.mod-collapsible-text .collapsible-item .collapsible-item-trigger .collapsible-item-trigger-less {
+    display: none; }
+  .collapsible.mod-collapsible-text .collapsible-item .collapsible-item-trigger .collapsible-item-trigger-more {
+    display: inline-block; }
+
+.collapsible.mod-collapsible-text .collapsible-item .collapsible-item-content {
+  margin: 0; }
+
+.collapsible.mod-collapsible-text .collapsible-item p:last-child:after {
+  display: inline-block;
+  content: '..';
+  transition: opacity 300ms; }
+
+.collapsible.mod-collapsible-text .collapsible-item.is-expanded {
+  border-color: transparent; }
+  .collapsible.mod-collapsible-text .collapsible-item.is-expanded .collapsible-item-trigger {
+    background: none;
+    -webkit-filter: initial;
+            filter: initial; }
+    .collapsible.mod-collapsible-text .collapsible-item.is-expanded .collapsible-item-trigger .collapsible-item-trigger-less {
+      display: inline-block; }
+    .collapsible.mod-collapsible-text .collapsible-item.is-expanded .collapsible-item-trigger .collapsible-item-trigger-more {
+      display: none; }
+    .collapsible.mod-collapsible-text .collapsible-item.is-expanded .collapsible-item-trigger:before {
+      content: "";
+      color: #189;
+      background: #fff; }
+    .collapsible.mod-collapsible-text .collapsible-item.is-expanded .collapsible-item-trigger:hover {
+      background: none;
+      -webkit-filter: initial;
+              filter: initial; }
+      .collapsible.mod-collapsible-text .collapsible-item.is-expanded .collapsible-item-trigger:hover:before {
+        color: #c00; }
+  .collapsible.mod-collapsible-text .collapsible-item.is-expanded p:last-child:after {
+    opacity: 0; }
+
+.collapsible.mod-collapsible-text.mod-collapsible-textsmall .collapsible-item .collapsible-item-trigger {
+  border-bottom: 0; }
+  .collapsible.mod-collapsible-text.mod-collapsible-textsmall .collapsible-item .collapsible-item-trigger span {
+    left: 0;
+    padding: 0 0 0 1.2em; }
+  .collapsible.mod-collapsible-text.mod-collapsible-textsmall .collapsible-item .collapsible-item-trigger:before {
+    left: 0;
+    bottom: -.4em;
+    padding: 0;
+    margin: 0; }
+
+.spinner-icon {
+  animation: clockwise 0.75s linear infinite;
+  border: 3px solid;
+  border-color: #189 #189 #189 rgba(255, 255, 255, 0.25);
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  background: url(http://ti.com/assets/images/spinner.gif) \9;
+  border: none\9;
+  height: 60px\9;
+  width: 60px\9; }
+
+.spinner-target {
+  position: relative; }
+  .spinner-target .spinner-container {
+    background: rgba(255, 255, 255, 0.6) none repeat scroll 0 0;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10; }
+  .spinner-target .spinner {
+    margin: 300px auto;
+    animation: clockwise 0.75s linear infinite;
+    border: 3px solid;
+    border-color: #189 #189 #189 rgba(255, 255, 255, 0.25);
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    background: url(http://ti.com/assets/images/spinner.gif) \9;
+    border: none\9;
+    height: 60px\9;
+    width: 60px\9; }
+    .spinner-target .spinner *::before, .spinner-target .spinner *::after {
+      content: ""; }
+
+@keyframes clockwise {
+  100% {
+    transform: rotate(360deg) translateZ(0px); } }
+
+@keyframes counter-clockwise {
+  100% {
+    transform: rotate(-360deg) translateZ(0px); } }
+
+.ie8 nav.drawer .head, .ie8 nav.drawer .foot {
+  display: none; }
+
+.hide-href a {
+  display: none; }
+
+.mobile .hide-href a {
+  display: inline; }
+
+.mobile .hide-href span {
+  display: none; }
+
+@media screen and (min-width: 641px) {
+  main.container {
+    display: flex;
+    align-items: stretch;
+    overflow: auto;
+    background: #fff; }
+  nav.drawer .head, nav.drawer .foot {
+    display: none; }
+  .multi-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    column-gap: 2em; } }
+
+@media screen and (min-width: 1900px) {
+  .multi-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3; } }
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 11px;
+    -webkit-text-size-adjust: 100%; }
+  #tiHeader .top ul, #tiHeader .nav ul, #tiHeader .sub, footer#tiFooter, nav.drawer .nav a, .siloTitle, .pageTitle, .breadcrumb, .pageContent, .pageNav, .tab ul, .anchor ul {
+    padding-right: 1rem;
+    padding-left: 1rem; }
+  #tiHeader {
+    min-width: inherit;
+    /*#sub_cart
+			.column.border
+				padding-top: 1em
+
+			a.button
+				margin: 2.5em 0 0 0*/ }
+    #tiHeader li#top_search, #tiHeader li#nav_products, #tiHeader li#nav_applications, #tiHeader li#nav_toolsSoftware, #tiHeader li#nav_supportCommunity, #tiHeader li#nav_sampleBuy, #tiHeader li#nav_aboutTI {
+      display: none; }
+    #tiHeader li#nav_menu, #tiHeader li#nav_search {
+      display: block; }
+    #tiHeader [id*="_search"] form {
+      width: 100%;
+      max-width: 300px; }
+    #tiHeader .searchInput {
+      width: 50%; }
+    #tiHeader .searchFlyout {
+      width: 100%; }
+    #tiHeader li#top_logo a {
+      background-size: 70% auto;
+      height: 25px; }
+    #tiHeader #sub_menu_product > ul {
+      float: left;
+      width: 33%; }
+    #tiHeader #sub_menu li {
+      max-width: 180px; }
+  #tiFooter .noMobile, #tiFooter .social {
+    display: none; } }
+
+@media screen and (max-width: 640px) {
+  header.drawer {
+    display: block; }
+  nav.drawer {
+    transform: translateX(-281px);
+    visibility: hidden;
+    height: 0; }
+    nav.drawer h3 {
+      border-top: 1px solid #e0e0e0; }
+  main.content {
+    width: 100%;
+    padding-top: 44px !important; }
+  .drawer #tiHeader, .drawer #tiFooter {
+    display: none; }
+  .drawerOpen nav.drawer {
+    width: 85%;
+    float: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    visibility: visible;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: transform 0.2s ease-in 0.1s;
+    -webkit-overflow-scrolling: touch; }
+  #tiHeader li#nav_history a, #tiHeader li#nav_cart a, #tiHeader li#nav_language a, #tiHeader li#nav_profile a, #tiHeader li#nav_search a {
+    text-indent: -100000em;
+    width: 4em; }
+  #tiHeader li#nav_history a:before, #tiHeader li#nav_cart a:before, #tiHeader li#nav_language a:before, #tiHeader li#nav_profile a:before, #tiHeader li#nav_search a:before {
+    margin-left: .2em;
+    text-indent: 0; }
+  #tiHeader li#top_login {
+    display: none; }
+    #tiHeader li#top_login.active {
+      display: block;
+      position: absolute;
+      top: 8em;
+      z-index: 1; }
+  #tiHeader .columnGroup {
+    display: block; }
+  #tiHeader .column {
+    float: none;
+    border: 0;
+    padding: 0 0 1em 0; }
+    #tiHeader .column.middle {
+      padding-top: 0; }
+    #tiHeader .column.border {
+      border-left: 0;
+      padding-left: 0; }
+  #tiHeader .sub {
+    margin-left: 0;
+    padding-bottom: 1rem; }
+  #tiHeader #sub_menu .column {
+    float: left;
+    width: 50%; }
+  #tiHeader #sub_menu_product > ul {
+    width: 100%; }
+  #tiHeader #sub_language h3 {
+    display: none; }
+  #tiHeader #sub_language .column:first-child h3 {
+    display: block; }
+  #tiHeader #sub_history ul {
+    float: none;
+    width: 100% !important;
+    border: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: 1em; }
+  #tiHeader #sub_profile {
+    padding-top: 5em; }
+  .noPhone {
+    display: none; }
+  .row {
+    margin-bottom: 0; }
+  .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12 {
+    float: none;
+    padding: 0;
+    margin-bottom: 2em;
+    width: 100%; }
+  form.responsive .c1, form.responsive .c2, form.responsive .c3, form.responsive .c4, form.responsive .c5, form.responsive .c6, form.responsive .c7, form.responsive .c8, form.responsive .c9, form.responsive .c10, form.responsive .c11, form.responsive .c12 {
+    margin-bottom: 0; }
+  .overviewHeader {
+    background-image: none !important;
+    height: auto; }
+    .overviewHeader .valprop-header {
+      font-size: 1em; }
+    .overviewHeader .overviewHeaderFade, .overviewHeader .bracket, .overviewHeader .seoFullWidth, .overviewHeader h4, .overviewHeader .valprop-sub-header, .overviewHeader #valPropFrames, .overviewHeader #valPropSlides, .overviewHeader #valPropStill {
+      display: none !important; }
+  .same-height {
+    display: block; } }
+
+@media print {
+  header, footer, .tab, .anchor {
+    display: none; } }
+
+.step-circle {
+  border-radius: 50%;
+  background-color: #333;
+  padding: .10em .50em .10em .50em;
+  color: #fff;
+  margin-right: .4em;
+  line-height: 2rem; }
+
+.circle {
+  font-weight: 300;
+  li: before;
+  text-align: center;
+  margin-left: 46px;
+  margin-left: 3.28571429 rem;
+  border-radius: 50%;
+  font-size: 13px;
+  font-size: .92857143rem;
+  height: 28px;
+  height: 2rem;
+  line-height: 28px;
+  line-height: 2rem;
+  margin: -3px 10px 1px -40px;
+  padding-top: 1px;
+  padding-top: .07142857rem;
+  width: 28px;
+  width: 2rem;
+  float: left;
+  background-color: #cecfd5;
+  color: #c00;
+  list-style: none; }
+
+.step-circle.teal {
+  background-color: #118899; }
+
+.step-circle.disabled {
+  background-color: #e0e0e0; }
+
+.step.disabled {
+  color: #e0e0e0; }
+
+.icon-wordreplace.icon-check.disabled {
+  color: #e0e0e0; }
+
+.info-pane input[type="checkbox"] {
+  display: none; }
+  .info-pane input[type="checkbox"] + label::before {
+    content: '\e88e';
+    color: #ccc;
+    display: inline-block;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 0.1em; }
+  .info-pane input[type="checkbox"]:checked + label::before {
+    color: #999; }
+  .info-pane input[type="checkbox"]:checked + label + .pane {
+    opacity: 1;
+    display: block;
+    max-height: 1200px;
+    background: white;
+    border: 1px solid #CCC;
+    padding: 1em 1.8em 1em 1em;
+    border-radius: .2em;
+    overflow: hidden;
+    margin: 1em 0;
+    -webkit-transition: max-height .2s, margin .2s, opacity .2s;
+    transition: max-height .2s, margin .2s, opacity .2s; }
+  .info-pane input[type="checkbox"] + label + .pane {
+    display: block;
+    max-height: 0px;
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0;
+    opacity: 0;
+    -webkit-transition: max-height .2s, margin .2s, opacity .2s;
+    transition: max-height .2s, margin .2s, opacity .2s; }
+
+.info-pane.floating input[type="checkbox"] + label::before {
+  content: ''; }
+
+.info-pane.floating input[type="checkbox"] + label {
+  color: #189;
+  cursor: pointer; }
+
+.info-pane.floating input[type="checkbox"] + label + .pane {
+  position: absolute;
+  max-width: 400px;
+  width: 150%;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s; }
+
+.info-pane.floating input[type="checkbox"]:checked + label {
+  color: #156; }
+
+.info-pane.floating input[type="checkbox"]:checked + label + .pane {
+  opacity: 1;
+  display: block;
+  position: absolute;
+  max-height: 1200px;
+  background: white;
+  border: none;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.38);
+  padding: 1em 1.8em 1em 1em;
+  border-radius: 0em;
+  overflow: hidden;
+  margin: 1em 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s; }
+
+.alert-message {
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #edf7f8;
+  border: 1px solid #189;
+  border-radius: 5px; }
+  .alert-message p, .alert-message ul {
+    margin: 0.25em 0 0 6.2em; }
+  .alert-message ol {
+    margin: 0.25em 0 0 7.5em; }
+  .alert-message h3 {
+    margin: 0.2em 1em 0 0; }
+  .alert-message:before {
+    font-size: 5em;
+    color: #189;
+    padding: 0 .25em 0 0;
+    margin: 0 -1em 100% 0;
+    content: "\e031";
+    margin: 0; }
+  .alert-message.info:before {
+    content: "\e88e"; }
+  .alert-message.tips:before {
+    content: "\e85D"; }
+  .alert-message.undo:before {
+    content: "\e166"; }
+  .alert-message.alert {
+    background-color: #ffffb3;
+    border: 1px solid #555; }
+    .alert-message.alert:before {
+      color: #555;
+      content: "\e002"; }
+  .alert-message.form-error, .alert-message.error {
+    background-color: #fbeeee;
+    border: 1px solid #900; }
+    .alert-message.form-error:before, .alert-message.error:before {
+      color: #900;
+      content: "\e000"; }
+  .alert-message.form-success {
+    background-color: #fff;
+    border: 1px solid #096; }
+    .alert-message.form-success:before {
+      color: #096;
+      content: "\e86c"; }
+  .alert-message .close {
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.3em;
+    padding: .2em;
+    margin: -.5em -.5em 0 0;
+    float: right; }
+    .alert-message .close:hover {
+      background: rgba(150, 150, 150, 0.3); }
+    .alert-message .close::before {
+      content: "\e5cd"; }
+
+.alert-input {
+  display: none; }
+  .alert-input:checked + .alert-message {
+    opacity: 0;
+    max-height: 1px;
+    padding: 0;
+    margin: 0;
+    transition: opacity .1s, padding .1s, margin .1s; }
+    .alert-input:checked + .alert-message:before {
+      max-height: 0; }
+  .alert-input:not(checked) + .alert-message {
+    opacity: 1;
+    transition: opacity .1s, padding .1s, margin .1s; }
+
+.icon-wordreplace {
+  display: inline-block;
+  position: relative;
+  padding: 0 1.2em;
+  right: 9999px;
+  min-width: 1.2em;
+  max-width: 1.2em; }
+
+.icon-wordreplace:after {
+  position: absolute;
+  overflow: visible;
+  right: -9999px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1;
+  font-family: 'Material Icons', sans-serif;
+  bottom: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
+
+a.icon-wordreplace:after {
+  color: #189; }
+
+a.icon-wordreplace:hover:after {
+  color: #c00; }
+
+.icon-check:after {
+  content: '\e86c'; }
+
+.icon-dash:after {
+  content: '\e15b'; }
+
+.icon-plus:after {
+  content: '\e147'; }
+
+.icon-minus:after {
+  content: '\e15c'; }
+
+.icon-delete:after {
+  content: '\e872'; }
+
+.icon-search:after {
+  content: '\e8b6'; }
+
+.icon-edit:after {
+  content: '\e3c9'; }
+
+.icon-colorteal {
+  color: #189; }
+
+.icon-colorgrey {
+  color: #555; }
+
+.icon-colorred {
+  color: #c00; }
+
+body:after {
+  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  display: none; }
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10002;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none; }
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10003;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal; }
+  .lightbox .lb-image {
+    display: block;
+    height: auto;
+    max-width: inherit;
+    border-radius: 3px; }
+  .lightbox a img {
+    border: none; }
+
+.lb-outerContainer {
+  position: relative;
+  background-color: white;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px; }
+  .lb-outerContainer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.lb-container {
+  padding: 4px; }
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0; }
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../img/loading.gif) no-repeat; }
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10; }
+
+.lb-container > .nav {
+  left: 0; }
+
+.lb-nav a {
+  outline: none;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="); }
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block; }
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../img/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s; }
+  .lb-nav a.lb-prev:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../img/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s; }
+  .lb-nav a.lb-next:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px; }
+  .lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc; }
+  .lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em; }
+  .lb-data .lb-caption {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1em; }
+  .lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 12px;
+    color: #999999; }
+
+.lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../img/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s; }
+  .lb-close:hover {
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+#entryDesc {
+  overflow: auto;
+  height: 50px;
+  margin: .5em 0 1em; }
+
+.galleryThumbTitle {
+  font-size: 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 160px; }
+
+.hand img {
+  border: 1px solid #c0c0c0; }
+
+.galleryRelatedBox {
+  background: #fff;
+  border: solid 1px #c0c0c0;
+  padding: .5em;
+  overflow: auto;
+  height: 281px; }
+
+.tagDesc {
+  overflow: auto;
+  height: 40px;
+  margin: .5em 0 1em; }
+
+.durDesc, .viewDesc, .postDesc {
+  overflow: auto;
+  margin: .5em 0 1em; }
+
+.videoContainer {
+  border: 1px solid #c0c0c0; }
+
+.btnPrototype {
+  background: #ffffb3; }
+
+.btnPrototype:hover {
+  background: #ffffe5; }
+
+.btnPrototypeSamuel {
+  background: #0066cc;
+  color: #ccc; }
+
+.btnPrototypeSamuel:hover {
+  background: #0099dd;
+  color: #ccc; }
+
+.new-temporary-style {
+  color: #ff69b4; }
+
+/*# sourceMappingURL=maps/toolkit.css.map */
