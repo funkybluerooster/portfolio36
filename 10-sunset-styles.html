@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 
 
-	<title>About | TI pattern library</title>
+	<title>Sunset Styles | TI pattern library</title>
 
 	<link rel="stylesheet" href="assets/fabricator/styles/f.css">
 	
@@ -2341,146 +2341,601 @@
 
 
 	
+<!-- Javascript Libraries Here: -->
+<!-- -->
 
-<div class="f-item-group main">
-    <h1 class="f-overview-main">TI style-guide and pattern library</h1>
 
-    <ul class="f-no-list">
-        <li>
-            <span class="f-control"><svg><use xlink:href="#f-icon-menu"/></svg></span>
-            &nbsp; shows and hides the menu.
-        </li>
-        <li>
-            <span class="f-control"><svg><use xlink:href="#f-icon-labels"/></svg></span>
-            &nbsp; shows and hides headings as well as the individual toggle buttons in each component.
-        </li>
-        <li>
-            <span class="f-control"><svg><use xlink:href="#f-icon-notes"/></svg></span>
-            &nbsp; shows and hides the documentation.
-        </li>
-        <li>
-            <span class="f-control"><svg><use xlink:href="#f-icon-code"/></svg></span>
-            &nbsp; shows and hides the code.
-        </li>
-    </ul>
-</p>
+<div class="f-item-group" id="accordion-large-content-areas-show-and-hide">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading"><!--[if IE 8]>&nbsp;<![endif]-->Accordion Large Content Areas Show And Hide</h2>
+		<div class="f-item-controls">
+		
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+		
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+		
+			</span>
+		</div>	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p><span class="flag">Deprecated - not to be used.</span></p>
+<p>Used to hide and show large content areas (often used for very long tables).</p>
+<p>To work this Requires</p>
+<ul>
+<li>
+<p>jQuery
+<strong>IMPORTANT:</strong> The header and footer include file contains javascript and jquery calls so it is NOT necessary to include this in your page on <a href="http://ti.com">ti.com</a>. <strong>If duplicate calls are on a page it will cause the page to break.</strong></p>
+</li>
+<li>
+<p>JavaScript function</p>
+</li>
+<li>
+<p>On LiveSite pages: make sure you enter content in Script/Style Elements field not in the TinyMCE editor.</p>
+</li>
+</ul>
+<p>Information can be found in:</p>
+<p><a href="https://infolink.sc.ti.com/business_rooms/marketing_sales/market_lounge_im/w/user_interface_design/5698.show-more-show-less-button-tab.aspx">Development, Scripting: Show More/ Show Less Button (tab)</a></p>
+<p><img src="http://4com.corp.ti.com/ims/style_guide_pattern_library/screenshots-for-guide/showhide2.jpg" alt="Sample of the View More function"></p>
+<p><em>Fig A: Sample of the Show More function on a page.</em></p>
+
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+<div class="f-item-preview">
+	
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup"></code></pre>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+
+<!-- &nbsp; is for ie8 to fix the margins -->
+
+
+
 </div>
 
-<!-- ===== PATTERN STATUS SECTION ==== -->
 
-<div class = "f-item-group">
-    <div class="f-item-heading-group">
-        <h2 class="f-item-heading">Pattern Status</h2>
-    </div><!--[if IE 8]>&nbsp;<![endif]-->
-    <br>
-    <div class="row">
+<div class="f-item-group" id="accordion-small-content-areas-show-and-hide">
 
-        <div class="c6">
-            <h5>New / Updated</h5>
-            <p>
-                <i>These are the following patterns are new or updated recently.</i>
-            </p>
-            <ul class="no-style" id="newUpdated"></ul>
-        </div>
-        <div class="c6">
-            <h5>Beta</h5>
-            <p>
-                <i>Use the following patterns with caution as they might change.</i>
-            </p>
-            <ul class="no-style" id="betaList"></ul>
-        </div>
-    </div>
-</div> 
-<!-- ===== end of Pattern Status ==== -->
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading"><!--[if IE 8]>&nbsp;<![endif]-->Accordion Small Content Areas Show And Hide</h2>
+		<div class="f-item-controls">
+		
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+		
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+		
+			</span>
+		</div>	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p><span class="flag">Deprecated - not to be used</span></p>
+<p>These accordions are deprecated in favor of new collapsible accordion pattern. To be sunsetted gradually.</p>
 
-<div class = "f-item-group">
-
-    <div class="f-item-heading-group">
-        <h2 class="f-item-heading">Quick start</h2>
-    </div><!--[if IE 8]>&nbsp;<![endif]-->
-    <p>
-Please refer to our <a href="https://confluence.itg.ti.com/display/DCPWTIPATLIB/TIcom+Styleguide+Documentation">Confluence page</a> for information on installation and setup of the styleguide.<br>
-<a href="https://confluence.itg.ti.com/display/DCPWTIPATLIB/TIcom+Styleguide+Documentation">https://confluence.itg.ti.com/display/DCPWTIPATLIB/TIcom+Styleguide+Documentation</a>
-</p>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+<div class="f-item-preview">
+	<div class="collapsible-set">
+	<div class="collapsible">
+		<span class="icon"></span>
+		<h4>Integrity is the cornerstone.</h4>
+		<div class="collapsed">
+			<p>We believe in doing the right thing. Always. It matters to us more than profits, and we expect it of every TIer.</p>
+		</div>
+	</div>
+	<div class="collapsible">
+		<span class="icon"></span>
+		<h4>Innovation is our lifeblood.</h4>
+		<div class="collapsed">
+			<p>It is the way we push the boundaries of what’s possible and solve problems to create products that change our world for the better.</p>
+		</div>
+	</div>
+	<div class="collapsible">
+		<span class="icon"></span>
+		<h4>Commitment is our promise.</h4>
+		<div class="collapsed">
+			<p>We promise to safeguard the environment and make our communities stronger. We promise to respect and value one another and do what we say we will. And we commit to win, setting high expectations for our performance.</p>
+		</div>
+	</div>
 </div>
-<div class = "f-item-group">
-    <div class="f-item-heading-group">
-        <h3 class="f-item-heading">Contact</h3>
-    </div>
-    <p>If you need to contact the Pattern Library development team, use the mailing list below:
-    <ul><li><a href="webtech-pattern-team@list.ti.com">webtech-pattern-team@list.ti.com</a></li></p></ul>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
 
-    <p><h5>Development team:</h5>
-    <ul>
-        <li>Douglas Loo</li>
-        <li>Harsh Singh</li>
-        <li>Samuel Li</li>
-        <li>So-Eun Han</li>
-        <li>Debbie Spalding</li>
-        <li>Jason Strimas</li>
-        <li>Clementina Brollo</li>
-        <li>Brian Parisien</li>
-    </ul>
-</p>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;collapsible-set&quot;&gt;
+	&lt;div class=&quot;collapsible&quot;&gt;
+		&lt;span class=&quot;icon&quot;&gt;&lt;/span&gt;
+		&lt;h4&gt;Integrity is the cornerstone.&lt;/h4&gt;
+		&lt;div class=&quot;collapsed&quot;&gt;
+			&lt;p&gt;We believe in doing the right thing. Always. It matters to us more than profits, and we expect it of every TIer.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;collapsible&quot;&gt;
+		&lt;span class=&quot;icon&quot;&gt;&lt;/span&gt;
+		&lt;h4&gt;Innovation is our lifeblood.&lt;/h4&gt;
+		&lt;div class=&quot;collapsed&quot;&gt;
+			&lt;p&gt;It is the way we push the boundaries of what’s possible and solve problems to create products that change our world for the better.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;collapsible&quot;&gt;
+		&lt;span class=&quot;icon&quot;&gt;&lt;/span&gt;
+		&lt;h4&gt;Commitment is our promise.&lt;/h4&gt;
+		&lt;div class=&quot;collapsed&quot;&gt;
+			&lt;p&gt;We promise to safeguard the environment and make our communities stronger. We promise to respect and value one another and do what we say we will. And we commit to win, setting high expectations for our performance.&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
 
-<p><i>
-        If you have comments, questions or need help feel free to message the list and someone will respond. This team is designing, developing and documenting new and existing standards for TI.com.</i></p>
+<!-- &nbsp; is for ie8 to fix the margins -->
+
+
+
 </div>
 
-<script>
 
-$(document).ready(function (){
+<div class="f-item-group" id="accordion-style-show-hide-content-listing">
 
-    updatePatternStatus(fabricator.getNewPatterns(), 'newUpdated', 'new');
-    updatePatternStatus(fabricator.getCautionPatterns(), 'betaList', 'caution');
-    //console.log(fabricator.getNewPatterns()); function to get new pattern list
-    //console.log(fabricator.getCautionPatterns());
-    //console.log(fabricator.getPFTPatterns());
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading"><!--[if IE 8]>&nbsp;<![endif]-->Accordion Style Show Hide Content Listing</h2>
+		<div class="f-item-controls">
+		
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+		
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+		
+			</span>
+		</div>	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p><span class="flag">Deprecated - not to be used.</span></p>
+<p><strong>IMPORTANT: This functionality should be used only when necessary as it hides all content:</strong></p>
+<ul>
+<li>Content cannot be broken into separate pages or belongs to another secton,</li>
+<li>Customers are interested in only one area of content – other content areas are ok to be hidden</li>
+<li>Consult with an XA if it's appropriate to implement</li>
+</ul>
+<p>Used in conjunction with a scrolling function to help keep users orientated on the page.</p>
+<p><strong>IMPORTANT:</strong> Do not use any classes within an anchor link on a page that contains the accordion script as it will cause the link to not work or work sporadically.</p>
+<h4>Script Call</h4>
+<p>To implement this, you require the following script call:</p>
+<p><code>&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js&quot;&gt;&lt;/script&gt;</code></p>
+<p>NOTE: The script calls needs to be placed AFTER the base <code>jquery</code> library call which is usually found in the header.</p>
+<h3>Define Accordion Block</h3>
+<p>Each block of content needs to be placed within a parent container <code>div</code> with the following markup:</p>
+<pre><code class="language-javascript">&lt;div id=&quot;UNIQUE_ID&quot; class=&quot;accordion&quot;&gt;
+    &lt;h3&gt;Accordion Header&lt;/h3&gt;
+    &lt;div&gt;Accordion Content&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3>Anchor link to specific accordion item</h3>
+<p>If you want to have an anchor link at the top of the page, that links to a specific block of content in the accordion, the following link will link to that section and open the panel you are targeting. Add the following code to your <code>&lt;a&gt;</code> tag.</p>
+<p>Where:</p>
+<ul>
+<li>
+<p>anchor_name_for_section = the section block where you may have a list of accordion items</p>
+</li>
+<li>
+<p>accordion_item_num = the number in sequence, starting at 0, where the accordion item is located, this will open that particular item. For instance, you may have 5 items in one accordion. These can be targeted using numbers 0,1,2,3,4.</p>
+</li>
+</ul>
+<h3>Additional Script</h3>
+<p>Finally, The following script needs to be added to your page AFTER your content. This allows the DOM to be loaded first.</p>
+<p>This script requires editing: UNIQUE_ID needs to be initialized for each unique accordion. If you have only one accordion on the page, you only need to set this once.</p>
+<pre><code class="language-javascript">&lt;script&gt;
+    /* Checks for IE and turns off animation */
+      if ($.browser.msie){
+      var aOptions = {active: false, collapsible: true, autoHeight: false, animated: false};
+    } else {
+      var aOptions = {active: false, collapsible: true, autoHeight: false, animated: 275};
+    }
 
+$(function() {
+    /* Initialize all items for the accordion */
+    $( &quot;#UNIQUE_ID&quot; ).accordion(aOptions);
+    $( &quot;#UNIQUE_ID&quot; ).accordion(aOptions);      });
+
+$('h3').on(&quot;click&quot;, &quot;.ui-accordion-header&quot;, function(e) {
+  /* sets the panel that has been open, to the top of the screen to reorientate the visual view */
+  var firstAnchor = $(e.target).find('a')[0]
+  setTimeout(function(){
+    $('html, body').animate({
+    scrollTop: $( firstAnchor ).offset().top
+    }, 275);
+  }, 300);
+   return false;
 });
 
+/* Script you need to include ONLY if you have a series of accordions that you are */
+/* anchoring to from a master index list. OTherwise, you dont' need this.          */
+/* This is needed in addtion to the script above but is basically the same version */
+/* of the above but for anchor links */
+  $('area').click(function(e){
+    var targetlink = this;
+      setTimeout(function() {
+      var anchorname = $(targetlink).attr('href');
+        $('html, body').animate({
+        scrollTop: $(anchorname).offset().top
+      }, 0);
+    return false;
+    }, 400);
+    return false;
+    });
+  &lt;/script&gt;
+</code></pre>
+<h3>Accordion Example</h3>
 
-/**============================
-updatePatternStatus function
-=============================
- * Updated 10/20/2016 2016
- * Contact: samuel_li@ti.com
- *
- * Parameters: Array array, String elementID, String patternStatus
- * Takes the array of patternStatus and formats the HTML and attaches it to the element specified by elementID
- * patternStatus specifies what color dot to put beside the list element:
- *    'new' - New Pattern
- *    'caution' - Beta Pattern
- *
- * Hoping to put this function into a gulp task
- */
-updatePatternStatus = function (array, elementID, patternStatus) {
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+<div class="f-item-preview">
+	<div class="row c12">
+	<div role="tablist" id="accordion_example_A" class="accordion ui-accordion ui-widget ui-helper-reset">
+		<h3 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion_example_A-panel-0" id="ui-accordion-accordion_example_A-header-0" role="tab" class="bar ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+			<a class="bookmark" id="Tiva_12_bit_SAR" name="Tiva_12_bit_SAR" title="Tiva_12_bit_SAR"></a>12-bit SAR ADC – Tiva C</h3>
+		<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion_example_A-header-0" id="ui-accordion-accordion_example_A-panel-0" style="display: none;" class="row ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+			<div class="c8">
+				<h2>Tiva C Series: 12-bit SAR ADC</h2>
+				<p>The Tiva C Series is a family of ARM® Cortex™-M4 microcontrollers designed from the ground up to support real-time connected applications. The integrated analog peripherals enable applications to simultaneously connect to the user, communicate over
+					networks, and control its environment. The information below highlights the key features of each analog IP and recommended devices to begin evaluation. </p>
+			</div>
+			<div class="c4 center">
+				<div class="nested-box">
+					<p style="text-align: center">
+						<a href="http://www.ti.com/ww/en/graphics/12_bit_SAR_ADC.jpg" rel="lightbox"><img alt="" src="http://www.ti.com/ww/en/graphics/12_bit_SAR_ADC.jpg"><br>
+						</a>
+					</p>
+					<p class="center"><a class="button btnD" href="http://www.ti.com/ww/en/graphics/12_bit_SAR_ADC.jpg" rel="lightbox"><span class="enlarge">Enlarge</span></a></p>
+				</div>
+			</div>
+			<!-- end c4 -->
+		</div>
+		<h3 tabindex="0" aria-selected="false" aria-controls="ui-accordion-accordion_example_A-panel-1" id="ui-accordion-accordion_example_A-header-1" role="tab" class="bar ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+			<a class="bookmark" id="Tiva_Comparator" name="Tiva_Comparator" title="MSP430"></a>Analog Comparator – Tiva C</h3>
+		<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion_example_A-header-1" id="ui-accordion-accordion_example_A-panel-1" style="display: none;" class="row ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+			<div class="c8">
+				<h2>Tiva C Series: Analog Comparator</h2>
+				<p>The integrated Tiva C Series comparators save customers the current consumption and CPU overhead of the constant sample/compare required to identify a threshold with only an ADC. Users can also optimize their designs by selecting one of four different
+					modes that balance speed and current consumption. </p>
+			</div>
+			<!-- END C8 -->
+			<div class="c4 center">
+				<p style="text-align: center">
+					<a href="http://www.ti.com/ww/en/mcu/18187_analog_integration/images/Tiva_Analog_Comparator.jpg" rel="lightbox"><img alt="" src="http://www.ti.com/ww/en/mcu/18187_analog_integration/images/Tiva_Analog_Comparator.jpg"><br>
+					</a>
+				</p>
+				<p class="center"><a class="button btnD" href="http://www.ti.com/ww/en/mcu/18187_analog_integration/images/Tiva_Analog_Comparator.jpg" rel="lightbox"><span class="enlarge">Enlarge</span></a></p>
+			</div>
+			<!-- end c4 -->
 
-    var text="";
-    var patternName;
-    var newString;
-    var newpatternarray = array;
-    if(newpatternarray.length > 0){
-        for (var i = 0; i < newpatternarray.length; i++) { 
-            //Format pattern name
-            patternName = newpatternarray[i].split('#')[1]; //remove the .html prefix
+		</div>
+		<!-- end row -->
+	</div>
 
-            newString = patternName.split('.'); //split between parent category and pattern name
+</div>
 
-            text += "<li><span class='f-menu-tag " + patternStatus + "'></span>&nbsp; <a href='" + newpatternarray[i] + "'> ";
 
-            if(newString[1] != undefined){ // If the patternn is not a child
-                text += newString[0] + ' &gt; <strong>' + newString[1] + "</strong></a></li>";
-            }else{
-                text += "<strong>" + newString[0] + "</strong></a></li>";
-            }
-        }
-    }else{
-        text = "Currently no patterns with this status."
-    }
-        document.getElementById(elementID).innerHTML = text;
-}
+<script>
+	/*==Accordion==================================*/
+
+	/* Checks for IE and turns off animation */
+
+	if ($("html").hasClass("ie8")) {
+		var aOptions = {
+			active: false,
+			collapsible: true,
+			autoHeight: false,
+			animated: false
+		};
+	} else {
+		var aOptions = {
+			active: false,
+			collapsible: true,
+			autoHeight: false,
+			animated: 275
+		};
+	};
+
+	$("#accordion_example_A").accordion(aOptions);
+
+	$('h3').on("click", ".ui-accordion-header", function(e) {
+		/* sets the panel that has been open, to the top of the screen to reorientate the visual view */
+
+		var firstAnchor = $(e.target).find('a')[0]
+		setTimeout(function() {
+			$('html, body').animate({
+				scrollTop: $(firstAnchor).offset().top
+			}, 275);
+		}, 300);
+		return false;
+
+
+		/* animated scroll script */
+		$('area').click(function(e) {
+
+			var targetlink = this;
+
+			setTimeout(function() {
+
+				var anchorname = $(targetlink).attr('href');
+
+				$('html, body').animate({
+					scrollTop: $(anchorname).offset().top
+				}, 0);
+				return false;
+
+			}, 400);
+			return false;
+		});
+	});
+	/*-------------------------------------------------------------------------*/
 </script>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;row c12&quot;&gt;
+	&lt;div role=&quot;tablist&quot; id=&quot;accordion_example_A&quot; class=&quot;accordion ui-accordion ui-widget ui-helper-reset&quot;&gt;
+		&lt;h3 tabindex=&quot;-1&quot; aria-selected=&quot;false&quot; aria-controls=&quot;ui-accordion-accordion_example_A-panel-0&quot; id=&quot;ui-accordion-accordion_example_A-header-0&quot; role=&quot;tab&quot; class=&quot;bar ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all&quot;&gt;&lt;span class=&quot;ui-accordion-header-icon ui-icon ui-icon-triangle-1-e&quot;&gt;&lt;/span&gt;
+			&lt;a class=&quot;bookmark&quot; id=&quot;Tiva_12_bit_SAR&quot; name=&quot;Tiva_12_bit_SAR&quot; title=&quot;Tiva_12_bit_SAR&quot;&gt;&lt;/a&gt;12-bit SAR ADC – Tiva C&lt;/h3&gt;
+		&lt;div aria-hidden=&quot;true&quot; aria-expanded=&quot;false&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;ui-accordion-accordion_example_A-header-0&quot; id=&quot;ui-accordion-accordion_example_A-panel-0&quot; style=&quot;display: none;&quot; class=&quot;row ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom&quot;&gt;
+			&lt;div class=&quot;c8&quot;&gt;
+				&lt;h2&gt;Tiva C Series: 12-bit SAR ADC&lt;/h2&gt;
+				&lt;p&gt;The Tiva C Series is a family of ARM® Cortex™-M4 microcontrollers designed from the ground up to support real-time connected applications. The integrated analog peripherals enable applications to simultaneously connect to the user, communicate over
+					networks, and control its environment. The information below highlights the key features of each analog IP and recommended devices to begin evaluation. &lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;c4 center&quot;&gt;
+				&lt;div class=&quot;nested-box&quot;&gt;
+					&lt;p style=&quot;text-align: center&quot;&gt;
+						&lt;a href=&quot;http://www.ti.com/ww/en/graphics/12_bit_SAR_ADC.jpg&quot; rel=&quot;lightbox&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.ti.com/ww/en/graphics/12_bit_SAR_ADC.jpg&quot;&gt;&lt;br&gt;
+						&lt;/a&gt;
+					&lt;/p&gt;
+					&lt;p class=&quot;center&quot;&gt;&lt;a class=&quot;button btnD&quot; href=&quot;http://www.ti.com/ww/en/graphics/12_bit_SAR_ADC.jpg&quot; rel=&quot;lightbox&quot;&gt;&lt;span class=&quot;enlarge&quot;&gt;Enlarge&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;!-- end c4 --&gt;
+		&lt;/div&gt;
+		&lt;h3 tabindex=&quot;0&quot; aria-selected=&quot;false&quot; aria-controls=&quot;ui-accordion-accordion_example_A-panel-1&quot; id=&quot;ui-accordion-accordion_example_A-header-1&quot; role=&quot;tab&quot; class=&quot;bar ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all&quot;&gt;&lt;span class=&quot;ui-accordion-header-icon ui-icon ui-icon-triangle-1-e&quot;&gt;&lt;/span&gt;
+			&lt;a class=&quot;bookmark&quot; id=&quot;Tiva_Comparator&quot; name=&quot;Tiva_Comparator&quot; title=&quot;MSP430&quot;&gt;&lt;/a&gt;Analog Comparator – Tiva C&lt;/h3&gt;
+		&lt;div aria-hidden=&quot;true&quot; aria-expanded=&quot;false&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;ui-accordion-accordion_example_A-header-1&quot; id=&quot;ui-accordion-accordion_example_A-panel-1&quot; style=&quot;display: none;&quot; class=&quot;row ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom&quot;&gt;
+			&lt;div class=&quot;c8&quot;&gt;
+				&lt;h2&gt;Tiva C Series: Analog Comparator&lt;/h2&gt;
+				&lt;p&gt;The integrated Tiva C Series comparators save customers the current consumption and CPU overhead of the constant sample/compare required to identify a threshold with only an ADC. Users can also optimize their designs by selecting one of four different
+					modes that balance speed and current consumption. &lt;/p&gt;
+			&lt;/div&gt;
+			&lt;!-- END C8 --&gt;
+			&lt;div class=&quot;c4 center&quot;&gt;
+				&lt;p style=&quot;text-align: center&quot;&gt;
+					&lt;a href=&quot;http://www.ti.com/ww/en/mcu/18187_analog_integration/images/Tiva_Analog_Comparator.jpg&quot; rel=&quot;lightbox&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://www.ti.com/ww/en/mcu/18187_analog_integration/images/Tiva_Analog_Comparator.jpg&quot;&gt;&lt;br&gt;
+					&lt;/a&gt;
+				&lt;/p&gt;
+				&lt;p class=&quot;center&quot;&gt;&lt;a class=&quot;button btnD&quot; href=&quot;http://www.ti.com/ww/en/mcu/18187_analog_integration/images/Tiva_Analog_Comparator.jpg&quot; rel=&quot;lightbox&quot;&gt;&lt;span class=&quot;enlarge&quot;&gt;Enlarge&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;!-- end c4 --&gt;
+
+		&lt;/div&gt;
+		&lt;!-- end row --&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;script&gt;
+	/*==Accordion==================================*/
+
+	/* Checks for IE and turns off animation */
+
+	if ($(&quot;html&quot;).hasClass(&quot;ie8&quot;)) {
+		var aOptions = {
+			active: false,
+			collapsible: true,
+			autoHeight: false,
+			animated: false
+		};
+	} else {
+		var aOptions = {
+			active: false,
+			collapsible: true,
+			autoHeight: false,
+			animated: 275
+		};
+	};
+
+	$(&quot;#accordion_example_A&quot;).accordion(aOptions);
+
+	$(&#x27;h3&#x27;).on(&quot;click&quot;, &quot;.ui-accordion-header&quot;, function(e) {
+		/* sets the panel that has been open, to the top of the screen to reorientate the visual view */
+
+		var firstAnchor = $(e.target).find(&#x27;a&#x27;)[0]
+		setTimeout(function() {
+			$(&#x27;html, body&#x27;).animate({
+				scrollTop: $(firstAnchor).offset().top
+			}, 275);
+		}, 300);
+		return false;
+
+
+		/* animated scroll script */
+		$(&#x27;area&#x27;).click(function(e) {
+
+			var targetlink = this;
+
+			setTimeout(function() {
+
+				var anchorname = $(targetlink).attr(&#x27;href&#x27;);
+
+				$(&#x27;html, body&#x27;).animate({
+					scrollTop: $(anchorname).offset().top
+				}, 0);
+				return false;
+
+			}, 400);
+			return false;
+		});
+	});
+	/*-------------------------------------------------------------------------*/
+&lt;/script&gt;</code></pre>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+
+<!-- &nbsp; is for ie8 to fix the margins -->
+
+
+
+</div>
+
+
+<div class="f-item-group" id="enlarge-button">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading"><!--[if IE 8]>&nbsp;<![endif]-->Enlarge Button</h2>
+		<div class="f-item-controls">
+		
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+		
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+		
+			</span>
+		</div>	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Used in conjunction with a script to enlarge an image/diagram.</p>
+<p>The diagram and button should always appear as a group. You need to either place it in a <code>level3 stack</code> or if content is already in a <code>level3 box</code> you may use nested-box to group it.</p>
+
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+<div class="f-item-preview">
+	<!--Enlarge button style-->
+<a href="#" class="button btnD"><span class="enlarge">Enlarge</span></a>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;!--Enlarge button style--&gt;
+&lt;a href=&quot;#&quot; class=&quot;button btnD&quot;&gt;&lt;span class=&quot;enlarge&quot;&gt;Enlarge&lt;/span&gt;&lt;/a&gt;</code></pre>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+
+<!-- &nbsp; is for ie8 to fix the margins -->
+
+
+
+</div>
+
+
+<div class="f-item-group" id="lists-with-double-arrow-for-bullet">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading"><!--[if IE 8]>&nbsp;<![endif]-->Lists With Double Arrow For Bullet</h2>
+		<div class="f-item-controls">
+		
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+		
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+		
+			</span>
+		</div>	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use plain bullets or other list styles as this style will eventually be redefined as a plain bulleted list style.</p>
+
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+<div class="f-item-preview">
+	<ul class="arrow">
+	<li>
+		<a href="#">list item 1</a>
+	</li>
+	<li>
+		<a href="#">list item 2</a>
+	</li>
+</ul>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul class=&quot;arrow&quot;&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#&quot;&gt;list item 1&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li&gt;
+		&lt;a href=&quot;#&quot;&gt;list item 2&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+
+<!-- &nbsp; is for ie8 to fix the margins -->
+
+
+
+</div>
+
+
+<div class="f-item-group" id="seo-footer-text">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading"><!--[if IE 8]>&nbsp;<![endif]-->Seo Footer Text</h2>
+		<div class="f-item-controls">
+		
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+		
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+		
+			</span>
+		</div>	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p><span class="flag">Deprecated - not to be used.</span></p>
+<p>No longer used by IMS.</p>
+<hr>
+<p><img src="http://4com.corp.ti.com/ims/style_guide_pattern_library/screenshots-for-guide/seo_text.png" alt="Good line length esxample"></p>
+
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+<div class="f-item-preview">
+	<br><br><br>
+<div class="divider-secondary">
+	<!-- divider -->
+</div>
+<p>seo text here</p>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;div class=&quot;divider-secondary&quot;&gt;
+	&lt;!-- divider --&gt;
+&lt;/div&gt;
+&lt;p&gt;seo text here&lt;/p&gt;</code></pre>
+</div><!--[if IE 8]>&nbsp;<![endif]-->
+
+<!-- &nbsp; is for ie8 to fix the margins -->
+
+
+
+</div>
+
+
+
+
+
 
 
 		</div>
